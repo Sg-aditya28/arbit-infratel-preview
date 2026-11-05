@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Navbar } from '@/src/components/Navbar';
 import { ArchitecturalHeroSlider } from '@/src/components/ArchitecturalHeroSlider';
 import { Footer } from '@/src/components/Footer';
+import { OfficialSocialMediaHub } from '@/src/components/OfficialSocialMediaHub';
 import { CorporateEnquiryDrawer } from '@/src/components/CorporateEnquiryDrawer';
 import { Toast, type ToastMessage } from '@/src/components/Toast';
 import { 
@@ -478,7 +479,10 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* 6. Institutional Governance & Statutory Assurance Strip (Light & Clean) */}
+        {/* 6. Official Social Media & Dispatches Hub */}
+        <OfficialSocialMediaHub />
+
+        {/* 7. Institutional Governance & Statutory Assurance Strip (Light & Clean) */}
         <section className="py-14 sm:py-18 bg-[#F6F5F2] border-b border-stone-200 select-none">
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
             <div className="bg-white border border-stone-300 p-8 sm:p-10 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-6">

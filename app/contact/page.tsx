@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import { Navbar } from '@/src/components/Navbar';
 import { ExecutiveEnquirySection } from '@/src/components/ExecutiveEnquirySection';
+import { OfficialSocialMediaHub } from '@/src/components/OfficialSocialMediaHub';
 import { CorporateEnquiryDrawer } from '@/src/components/CorporateEnquiryDrawer';
 import { Footer } from '@/src/components/Footer';
 import { Toast, type ToastMessage } from '@/src/components/Toast';
-import { Phone, ShieldCheck } from 'lucide-react';
 
 export default function ContactPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -55,6 +55,9 @@ export default function ContactPage() {
             addToast('Enquiry Dispatched', `Reference code ${ticket} logged. We will contact you shortly.`, 'success');
           }}
         />
+
+        {/* Official Social Media Community Strip */}
+        <OfficialSocialMediaHub />
       </main>
 
       <Footer onOpenEnquiry={() => handleOpenDrawer('General Corporate Inquiry')} />
