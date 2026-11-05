@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     'Civil Lines Gorakhpur Real Estate'
   ],
   icons: {
-    icon: '/favicon.svg',
+    icon: '/arbit-infratel-preview/favicon.svg',
   },
 };
 
@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${plusJakarta.variable} scroll-smooth`} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href="/arbit-infratel-preview/favicon.svg" />
       </head>
       <body className="bg-[#F6F5F2] text-[#181A1F] font-sans antialiased selection:bg-[#B8965A] selection:text-white min-h-screen flex flex-col" suppressHydrationWarning>
         {children}
