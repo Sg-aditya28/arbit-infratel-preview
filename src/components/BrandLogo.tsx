@@ -36,9 +36,9 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     lg: 'text-[10px] tracking-[0.26em]',
   };
 
-  // Official logo image assets extracted from verified social media profiles:
-  // - Light background: transparent royal blue "arbit" wordmark with golden arrow
-  // - Dark background: transparent crisp white "arbit" wordmark with golden arrow
+  // Official clean logo assets:
+  // - Light background: transparent royal blue "arbit" wordmark with golden upward arrow
+  // - Dark background: transparent crisp white "arbit" wordmark with golden upward arrow
   const logoSrc = isLight
     ? '/arbit-infratel-preview/arbit-logo-white.png'
     : '/arbit-infratel-preview/arbit-logo-transparent.png';
@@ -49,13 +49,13 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       <div className="relative flex-shrink-0 flex items-center">
         <img
           src={logoSrc}
-          alt="Arbit Infratel - We Are The Future"
+          alt="Arbit Infratel - Shaping Skylines, Building Legacies"
           className={`${imageSizes[size]} object-contain transition-transform duration-200 hover:scale-105`}
           loading="eager"
         />
       </div>
 
-      {/* Corporate Conglomerate Wordmark & Official Slogan */}
+      {/* Corporate Conglomerate Wordmark & Modern Slang / Motto */}
       <div className="flex flex-col justify-center">
         <div
           className={`font-extrabold uppercase leading-none font-sans ${titleSizes[size]} ${
@@ -70,7 +70,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
               isLight ? 'text-[#B8965A]' : 'text-[#9B7C44]'
             }`}
           >
-            WE ARE THE FUTURE • EST. 2010
+            SHAPING SKYLINES • BUILDING LEGACIES
           </div>
         )}
       </div>

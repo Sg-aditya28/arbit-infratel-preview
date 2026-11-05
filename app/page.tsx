@@ -85,7 +85,7 @@ export default function HomePage() {
               {/* Right 7 Cols: Clear & Concise Overview */}
               <div className="lg:col-span-7">
                 <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                  WE ARE THE FUTURE • ABOUT ARBIT INFRATEL
+                  SHAPING SKYLINES • ABOUT ARBIT INFRATEL
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl font-serif text-[#0B131E] font-normal leading-tight mb-4">

@@ -23,7 +23,7 @@ const TEXT_SLIDES: TextSlide[] = [
     index: '01',
     navLabel: 'COMMERCIAL LANDMARKS',
     category: 'Commercial Real Estate (Arbit The 25)',
-    tag: 'WE ARE THE FUTURE • GORAKHPUR',
+    tag: 'SHAPING SKYLINES • GORAKHPUR',
     titlePart1: 'Home to Eminent Retail Brands',
     titlePart2: '& Luxury Living.',
     subtext: 'Arbit Infratel delivers flagship commercial retail landmarks like Arbit The 25 in Gorakhpur, backed by UP-RERA registered compliance (Promoter: UPRERAPRM160411 | Project: UPRERAPRJ218427).',

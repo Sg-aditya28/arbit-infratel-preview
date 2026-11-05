@@ -38,7 +38,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
             <div className="max-w-3xl">
               <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                WE ARE THE FUTURE • ESTABLISHED 2010 • GORAKHPUR, UP
+                SHAPING SKYLINES • BUILDING LEGACIES • EST. 2010
               </div>
               <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
                 Corporate Heritage &amp; Profile
