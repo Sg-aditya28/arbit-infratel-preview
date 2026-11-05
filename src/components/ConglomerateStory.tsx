@@ -36,7 +36,7 @@ export const ConglomerateStory: React.FC<ConglomerateStoryProps> = ({ onOpenEnqu
           <div className="lg:col-span-7">
             
             <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-              01 // CORPORATE HERITAGE
+              WE ARE THE FUTURE • 01 // CORPORATE HERITAGE
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-serif text-[#0B131E] font-normal leading-tight mb-4">
@@ -60,7 +60,7 @@ export const ConglomerateStory: React.FC<ConglomerateStoryProps> = ({ onOpenEnqu
                   <span>Commercial Landmarks</span>
                 </div>
                 <p className="text-xs text-stone-600 leading-relaxed">
-                  Flagship projects like <em>Arbit The 25</em> featuring double-height retail and Grade-A office plates.
+                  Home to Eminent Retail Brands & Luxury Living. Flagship projects like <em>Arbit The 25</em> (UPRERAPRJ218427) featuring double-height retail and Grade-A office plates.
                 </p>
               </div>
 
@@ -80,7 +80,7 @@ export const ConglomerateStory: React.FC<ConglomerateStoryProps> = ({ onOpenEnqu
                   <span>Telecom Utility Grids</span>
                 </div>
                 <p className="text-xs text-stone-600 leading-relaxed">
-                  850+ km of trenchless HDD optical fiber ducting and 150+ telecom tower foundations.
+                  Telecom O&M (IME) partner for Altius Network, maintaining 850+ km of trenchless HDD optical fiber ducting and 150+ telecom towers.
                 </p>
               </div>
 

@@ -51,7 +51,7 @@ export const SignatureDevelopmentMonograph: React.FC<SignatureDevelopmentMonogra
       onDownloadMemo();
       return;
     }
-    const memo = `ARBIT INFRATEL PRIVATE LIMITED\nCONFIDENTIAL INFORMATION MEMORANDUM & TECHNICAL SPECIFICATIONS\n\nPROJECT: ARBIT THE 25\nLOCATION: Hariom Nagar, Civil Lines, Gorakhpur, Uttar Pradesh - 273001\nUP-RERA REGISTRATION: UPRERAPRM160411\nCIN: U64200UP2010PTC041308\n\n1. ARCHITECTURAL SUMMARY:\n- Mixed-use Grade-A commercial landmark comprising ground + multi-level retail atriums and column-free corporate suites.\n- Seismic Zone-IV compliant RCC frame designed to IS 456 / IS 1893 codes.\n- Low-E double-glazed acoustic curtain wall system.\n- Dual fire-escape stairwells, automatic sprinkler networks, and NFPA compliant fire suppression.\n- 100% DG emergency power backup with automated changeover.\n- Multi-level automated & hydraulic basement parking.\n\n2. FINANCIAL & GOVERNANCE ASSURANCE:\n- Promoter: Arbit Infratel Private Limited (Directors: Abhishek Agrawal, Anand Kumar Mishra).\n- Escrow Account Governance: 100% project receivables routed through designated scheduled bank escrow account per UP-RERA guidelines.\n\nVerified via Board Secretariat, Civil Lines, Gorakhpur.`;
+    const memo = `ARBIT INFRATEL PRIVATE LIMITED\nCONFIDENTIAL INFORMATION MEMORANDUM & TECHNICAL SPECIFICATIONS\n\nPROJECT: ARBIT THE 25\nLOCATION: Hariom Nagar, Civil Lines, Gorakhpur, Uttar Pradesh - 273001\nUP-RERA PROMOTER: UPRERAPRM160411 | PROJECT: UPRERAPRJ218427\nCIN: U64200UP2010PTC041308\n\n1. ARCHITECTURAL SUMMARY:\n- Mixed-use Grade-A commercial landmark comprising ground + multi-level retail atriums and column-free corporate suites.\n- Seismic Zone-IV compliant RCC frame designed to IS 456 / IS 1893 codes.\n- Low-E double-glazed acoustic curtain wall system.\n- Dual fire-escape stairwells, automatic sprinkler networks, and NFPA compliant fire suppression.\n- 100% DG emergency power backup with automated changeover.\n- Multi-level automated & hydraulic basement parking.\n\n2. FINANCIAL & GOVERNANCE ASSURANCE:\n- Promoter: Arbit Infratel Private Limited (Directors: Abhishek Agrawal, Anand Kumar Mishra).\n- Escrow Account Governance: 100% project receivables routed through designated scheduled bank escrow account per UP-RERA guidelines.\n\nVerified via Board Secretariat, Civil Lines, Gorakhpur.`;
     const blob = new Blob([memo], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -209,7 +209,7 @@ export const SignatureDevelopmentMonograph: React.FC<SignatureDevelopmentMonogra
                 ARBIT THE 25
               </h3>
               <p className="text-xs uppercase tracking-[0.16em] text-stone-500 font-sans font-semibold mt-1 mb-6">
-                Flagship Commercial &amp; Corporate Destination
+                Home to Eminent Retail Brands &amp; Luxury Living
               </p>
 
               {/* Executive Overview */}
@@ -231,8 +231,13 @@ export const SignatureDevelopmentMonograph: React.FC<SignatureDevelopmentMonogra
                 </div>
 
                 <div className="flex justify-between items-start border-b border-stone-200 pb-2">
-                  <span className="text-stone-500 uppercase tracking-wider text-[10px] font-bold">UP-RERA Registration</span>
+                  <span className="text-stone-500 uppercase tracking-wider text-[10px] font-bold">UP-RERA Promoter</span>
                   <span className="font-mono font-bold text-[#B8965A] text-right">UPRERAPRM160411</span>
+                </div>
+
+                <div className="flex justify-between items-start border-b border-stone-200 pb-2">
+                  <span className="text-stone-500 uppercase tracking-wider text-[10px] font-bold">UP-RERA Project ID</span>
+                  <span className="font-mono font-bold text-emerald-700 text-right">UPRERAPRJ218427</span>
                 </div>
 
                 <div className="flex justify-between items-start border-b border-stone-200 pb-2">

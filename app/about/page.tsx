@@ -38,7 +38,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
             <div className="max-w-3xl">
               <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                ESTABLISHED 2010 • GORAKHPUR, UP
+                WE ARE THE FUTURE • ESTABLISHED 2010 • GORAKHPUR, UP
               </div>
               <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
                 Corporate Heritage &amp; Profile
@@ -86,7 +86,7 @@ export default function AboutPage() {
                   TELECOM SCALE
                 </div>
                 <p className="text-xs text-stone-600 leading-relaxed font-normal">
-                  Expanded trenchless directional drilling to 850+ km of optical fiber ducting and erected 150+ telecom towers across Eastern Uttar Pradesh.
+                  Partnered with Altius Network for Telecom O&M (IME), expanding trenchless directional drilling to 850+ km of optical fiber ducting and erecting 150+ telecom towers.
                 </p>
               </div>
 
@@ -108,7 +108,7 @@ export default function AboutPage() {
                   ARBIT THE 25 &amp; ₹100+ CR
                 </div>
                 <p className="text-xs text-stone-600 leading-relaxed font-normal">
-                  Developing flagship commercial landmark <em>Arbit The 25</em> in Gorakhpur while surpassing ₹100+ Crore in cumulative execution and asset value.
+                  Developing flagship commercial landmark <em>Arbit The 25</em> (UPRERAPRJ218427) — "Home to Eminent Retail Brands & Luxury Living" in Gorakhpur while surpassing ₹100+ Crore in cumulative execution.
                 </p>
               </div>
 

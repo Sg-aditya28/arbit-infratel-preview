@@ -42,6 +42,17 @@ export const STATUTORY_DOCS: StatutoryDoc[] = [
     description: 'Statutory clearance as a verified Real Estate Promoter under Section 5 of the Real Estate (Regulation and Development) Act, 2016 for real estate project execution and escrow banking.'
   },
   {
+    id: 'rera-project-arbit25',
+    title: 'Arbit The 25 UP-RERA Project Registration',
+    identifier: 'Project RERA: UPRERAPRJ218427',
+    issuingAuthority: 'Uttar Pradesh Real Estate Regulatory Authority (Lucknow)',
+    dateOfIssue: 'Registered Commercial Landmark',
+    status: 'Active & Verified',
+    fileSize: '2.4 MB • Project Record',
+    docCode: 'UPRERAPRJ218427',
+    description: 'Statutory UP-RERA project registration for Arbit The 25 — signature commercial retail landmark in Basharatpur / Civil Lines corridor, Gorakhpur. Promoted by Arbit Infratel Private Limited (UPRERAPRM160411).'
+  },
+  {
     id: 'corporate-deck',
     title: 'Corporate Profile & Leadership Registry Deck',
     identifier: 'Ref: Hariom Nagar, Civil Lines, Gorakhpur',

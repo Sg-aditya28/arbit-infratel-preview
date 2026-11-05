@@ -32,7 +32,7 @@ const PILLARS: Pillar[] = [
     ],
     metrics: [
       { label: 'Built Footprint', value: '2.5M+ Sq.Ft.' },
-      { label: 'Flagship Project', value: 'Arbit The 25' },
+      { label: 'Flagship RERA', value: 'UPRERAPRJ218427' },
       { label: 'Promoter Status', value: 'UPRERAPRM160411' },
     ],
     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85',
@@ -65,8 +65,8 @@ const PILLARS: Pillar[] = [
     id: 'telecom',
     num: '03',
     title: 'TELECOM & UTILITY INFRASTRUCTURE',
-    subtitle: 'NIC 64200 Foundational Passive Utility Grids',
-    description: 'Delivering subterranean horizontal directional drilling (HDD), optical fiber ducting, and structural ground-based telecom towers across Eastern Uttar Pradesh.',
+    subtitle: 'Telecom Infrastructure O&M (IME) – Altius Network',
+    description: 'Authorized Operations & Maintenance (IME) partner for Altius Network, engineering and maintaining subterranean horizontal directional drilling (HDD), optical fiber ducting, and structural telecom towers across Eastern UP.',
     capabilities: [
       '850+ km trenchless directional drilling (HDD)',
       'Subterranean HDPE ducting and optical fiber laying',
@@ -77,7 +77,7 @@ const PILLARS: Pillar[] = [
     metrics: [
       { label: 'HDD Trenchless', value: '850+ km' },
       { label: 'Tower Deployments', value: '150+ Sites' },
-      { label: 'Primary NIC Code', value: '64200' },
+      { label: 'Telecom Partner', value: 'Altius Network' },
     ],
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=85',
     tag: 'UTILITY INFRASTRUCTURE',

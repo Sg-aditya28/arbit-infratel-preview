@@ -98,8 +98,37 @@ export const ExecutiveEnquirySection: React.FC<ExecutiveEnquirySectionProps> = (
                 <div>CIN: <strong className="text-[#0B131E]">U64200UP2010PTC041308</strong></div>
                 <div>UP-RERA PROMOTER: <strong className="text-[#9B7C44]">UPRERAPRM160411</strong></div>
                 <div>ROC: <span className="text-[#0B131E]">Kanpur, Uttar Pradesh</span></div>
+                <div>ARBIT THE 25 RERA: <strong className="text-[#9B7C44]">UPRERAPRJ218427</strong></div>
               </div>
             </div>
+
+            
+              {/* Official Verified Social Channels */}
+              <div className="mt-5 pt-4 border-t border-stone-200">
+                <div className="text-[10px] font-mono tracking-wider text-[#9B7C44] uppercase font-bold mb-2">
+                  OFFICIAL SOCIAL MEDIA
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-xs">
+                  <a
+                    href="https://www.facebook.com/arbitinfratel/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 bg-stone-50 hover:bg-[#1877F2]/10 border border-stone-200 hover:border-[#1877F2] transition-colors flex items-center gap-2 group"
+                  >
+                    <span className="font-bold text-[#1877F2]">Facebook</span>
+                    <span className="text-[10px] text-stone-500 font-mono ml-auto">6.4K+</span>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/arbitinfratel/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2.5 bg-stone-50 hover:bg-[#E4405F]/10 border border-stone-200 hover:border-[#E4405F] transition-colors flex items-center gap-2 group"
+                  >
+                    <span className="font-bold text-[#E4405F]">Instagram</span>
+                    <span className="text-[10px] text-stone-500 font-mono ml-auto">2.5K+</span>
+                  </a>
+                </div>
+              </div>
 
             {/* Escrow Guarantee Box */}
             <div className="bg-white border-l-4 border-[#9B7C44] border border-stone-200 p-6 shadow-sm">

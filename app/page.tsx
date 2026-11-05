@@ -85,7 +85,7 @@ export default function HomePage() {
               {/* Right 7 Cols: Clear & Concise Overview */}
               <div className="lg:col-span-7">
                 <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                  ABOUT ARBIT INFRATEL
+                  WE ARE THE FUTURE • ABOUT ARBIT INFRATEL
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl font-serif text-[#0B131E] font-normal leading-tight mb-4">
@@ -93,7 +93,7 @@ export default function HomePage() {
                 </h2>
 
                 <p className="text-sm sm:text-base text-stone-600 leading-relaxed mb-6 font-normal">
-                  Incorporated in 2010 in Gorakhpur, <strong className="text-[#0B131E]">Arbit Infratel Private Limited</strong> delivers landmark commercial developments, Class-A civil EPC projects, and critical utility networks across Uttar Pradesh.
+                  Incorporated in 2010 in Gorakhpur, <strong className="text-[#0B131E]">Arbit Infratel Private Limited</strong> is "Home to Eminent Retail Brands & Luxury Living", delivering landmark commercial developments, Class-A civil EPC projects, and passive telecom O&M infrastructure across Uttar Pradesh.
                 </p>
 
                 {/* 4 Simple Key Metric Cards (Light) */}
@@ -178,7 +178,7 @@ export default function HomePage() {
                     Landmark Real Estate
                   </h3>
                   <p className="text-xs sm:text-sm text-stone-600 leading-relaxed mb-6 font-normal">
-                    Master-planned commercial retail centers, flagship showrooms, and corporate suites including <em>Arbit The 25</em> in Gorakhpur.
+                    Home to Eminent Retail Brands & Luxury Living. Master-planned commercial retail centers, flagship showrooms, and corporate suites including <em>Arbit The 25</em> in Gorakhpur.
                   </p>
                 </div>
 
@@ -236,7 +236,7 @@ export default function HomePage() {
                     Telecom Infrastructure
                   </h3>
                   <p className="text-xs sm:text-sm text-stone-600 leading-relaxed mb-6 font-normal">
-                    Passive telecom network developer with over 850+ km of trenchless HDD optical fiber ducting and 150+ telecom towers across Eastern UP.
+                    Telecom Infrastructure O&M (IME) partner for Altius Network, engineering 850+ km of trenchless HDD optical fiber ducting and 150+ telecom towers across Eastern UP.
                   </p>
                 </div>
 
@@ -290,7 +290,7 @@ export default function HomePage() {
                   className="w-full h-full object-cover filter contrast-[1.05]"
                 />
                 <div className="absolute top-4 left-4 bg-[#0B131E]/90 text-[#B8965A] text-[10px] font-mono tracking-widest px-3 py-1 border border-[#B8965A]/40 uppercase">
-                  UP-RERA REGISTERED: UPRERAPRM160411
+                  UP-RERA PROMOTER: UPRERAPRM160411 • PROJECT: UPRERAPRJ218427
                 </div>
                 <div className="absolute bottom-4 left-4 right-4 bg-[#0B131E]/85 backdrop-blur-sm p-3 text-[11px] font-mono text-stone-300 flex justify-between items-center">
                   <span>Double-Height Retail Showrooms &amp; Corporate Suites</span>
