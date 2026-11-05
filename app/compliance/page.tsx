@@ -1,0 +1,145 @@
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import { Navbar } from '@/src/components/Navbar';
+import { GovernanceAndLeadershipVault } from '@/src/components/GovernanceAndLeadershipVault';
+import { CorporateEnquiryDrawer } from '@/src/components/CorporateEnquiryDrawer';
+import { Footer } from '@/src/components/Footer';
+import { Toast, type ToastMessage } from '@/src/components/Toast';
+import { ShieldCheck, CheckCircle2, Lock, Landmark, Scale, FileText, Download } from 'lucide-react';
+
+export default function CompliancePage() {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [drawerCategory, setDrawerCategory] = useState('Investor Relations & Statutory Verification');
+  const [toasts, setToasts] = useState<ToastMessage[]>([]);
+
+  const addToast = (title: string, description: string, type: 'success' | 'download' | 'info' = 'success') => {
+    const id = Date.now().toString() + Math.random().toString(36).substring(2, 6);
+    setToasts((prev) => [...prev, { id, title, description, type }]);
+  };
+
+  const removeToast = (id: string) => {
+    setToasts((prev) => prev.filter((t) => t.id !== id));
+  };
+
+  const handleOpenDrawer = (category = 'Investor Relations & Statutory Verification') => {
+    setDrawerCategory(category);
+    setIsDrawerOpen(true);
+  };
+
+  return (
+    <div className="min-h-screen flex flex-col bg-[#F6F5F2] text-[#181A1F]">
+      <Navbar onOpenEnquiry={handleOpenDrawer} />
+
+      <main className="flex-1">
+        {/* Page Executive Hero Text Section (Dark Architectural Style per design) */}
+        <section className="bg-[#0B131E] text-white py-16 sm:py-20 border-b border-[#B8965A]/30 relative overflow-hidden select-none">
+          <div className="absolute inset-0 architectural-grid opacity-20 pointer-events-none"></div>
+          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 relative z-10">
+            <div className="max-w-3xl">
+              <div className="flex items-center gap-3 text-xs tracking-[0.25em] uppercase font-bold text-[#B8965A] mb-3">
+                <span className="w-6 h-px bg-[#B8965A]"></span>
+                <span>STATUTORY DUE DILIGENCE &amp; RERA REGISTRY</span>
+              </div>
+              <h1 className="text-3xl sm:text-5xl font-serif text-white font-normal tracking-tight">
+                Governance, RERA &amp; Compliance Vault
+              </h1>
+              <p className="text-sm sm:text-base text-stone-300 font-sans font-light mt-4 leading-relaxed max-w-2xl">
+                Official regulatory registrations, 100% UP-RERA escrow banking protocols, and statutory corporate filings of Arbit Infratel Private Limited (Gorakhpur, UP).
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Governance & Leadership Vault (Light Coloured Background) */}
+        <GovernanceAndLeadershipVault />
+
+        {/* 100% Escrow Account Banking Assurance Protocol Section (Light Coloured Background) */}
+        <section className="py-16 sm:py-24 bg-white border-b border-stone-200 select-none">
+          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
+            
+            <div className="max-w-3xl mb-12">
+              <div className="text-xs font-mono tracking-widest text-[#9B7C44] uppercase font-bold mb-1.5">
+                FINANCIAL INTEGRITY &amp; STATUTORY CUSTODY
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-serif text-[#0B131E] font-normal">
+                Escrow Banking Protocols Under UP-RERA
+              </h2>
+              <p className="text-xs sm:text-sm text-stone-600 mt-2 leading-relaxed font-normal">
+                Arbit Infratel adheres to Section 4(2)(l)(D) of RERA Act 2016. Every commercial advance is secured in a scheduled commercial bank escrow account.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              
+              <div className="bg-[#F6F5F2] border border-stone-200 p-6 shadow-sm">
+                <div className="w-10 h-10 bg-white border border-stone-200 text-[#9B7C44] flex items-center justify-center mb-4">
+                  <Landmark className="w-5 h-5" />
+                </div>
+                <h3 className="text-lg font-serif font-bold text-[#0B131E] mb-1">
+                  100% Escrow Banking
+                </h3>
+                <p className="text-xs text-stone-600 leading-relaxed font-normal">
+                  All customer advances for <em>Arbit The 25</em> are deposited in dedicated escrow accounts, eliminating fund diversion.
+                </p>
+              </div>
+
+              <div className="bg-[#F6F5F2] border border-stone-200 p-6 shadow-sm">
+                <div className="w-10 h-10 bg-white border border-stone-200 text-[#9B7C44] flex items-center justify-center mb-4">
+                  <Scale className="w-5 h-5" />
+                </div>
+                <h3 className="text-lg font-serif font-bold text-[#0B131E] mb-1">
+                  Certified Withdrawals
+                </h3>
+                <p className="text-xs text-stone-600 leading-relaxed font-normal">
+                  Funds are withdrawn strictly in proportion to construction milestones certified by an independent architect and CA.
+                </p>
+              </div>
+
+              <div className="bg-[#F6F5F2] border border-stone-200 p-6 shadow-sm">
+                <div className="w-10 h-10 bg-white border border-stone-200 text-[#9B7C44] flex items-center justify-center mb-4">
+                  <ShieldCheck className="w-5 h-5" />
+                </div>
+                <h3 className="text-lg font-serif font-bold text-[#0B131E] mb-1">
+                  Zero Litigation Record
+                </h3>
+                <p className="text-xs text-stone-600 leading-relaxed font-normal">
+                  16-year corporate record with clean annual ROC filings and zero consumer or statutory disputes.
+                </p>
+              </div>
+
+            </div>
+
+            <div className="mt-8 p-5 bg-[#F6F5F2] border border-stone-300 flex flex-col sm:flex-row items-center justify-between gap-3 font-mono text-xs text-[#0B131E] shadow-sm">
+              <span className="font-semibold">STATUTORY AUDIT CONFIRMATION: UPRERAPRM160411</span>
+              <button
+                type="button"
+                suppressHydrationWarning
+                onClick={() => handleOpenDrawer('Statutory Banking Audit Query')}
+                className="bg-[#0B131E] hover:bg-[#B8965A] text-white px-5 py-2 text-[11px] uppercase tracking-wider font-bold transition-colors"
+              >
+                Request Consortia Deck
+              </button>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+      <Footer onOpenEnquiry={() => handleOpenDrawer('Compliance & Legal Desk')} />
+
+      <CorporateEnquiryDrawer
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+        initialCategory={drawerCategory}
+        onSuccess={(ticket, name) => {
+          addToast('Executive Query Logged', `Ticket ${ticket} logged for ${name}.`, 'success');
+        }}
+      />
+
+      <Toast toasts={toasts} onDismiss={removeToast} />
+    </div>
+  );
+}
