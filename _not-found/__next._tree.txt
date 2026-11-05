@@ -1,0 +1,4 @@
+:HL["/arbit-infratel-preview/_next/static/chunks/1vtzo7-693_p4.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"z2WSu7RUsdX_bgHlMILgf","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
