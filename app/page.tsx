@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Navbar } from '@/src/components/Navbar';
 import { ArchitecturalHeroSlider } from '@/src/components/ArchitecturalHeroSlider';
 import { ProjectsGallery } from '@/src/components/ProjectsGallery';
+import { AnimatedCounter } from '@/src/components/AnimatedCounter';
 import { Footer } from '@/src/components/Footer';
 import { CorporateEnquiryDrawer } from '@/src/components/CorporateEnquiryDrawer';
 import { Toast, type ToastMessage } from '@/src/components/Toast';
@@ -66,13 +67,17 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div className="text-3xl sm:text-4xl font-serif font-bold text-[#2C8FEA]">38+</div>
+                <div className="text-3xl sm:text-4xl font-serif font-bold text-[#2C8FEA]">
+                  <AnimatedCounter end={38} suffix="+" />
+                </div>
                 <div className="text-xs text-slate-600 font-semibold mt-1">Landmark Projects Delivered</div>
                 <div className="text-[11px] text-slate-400 mt-0.5">Across Gorakhpur &amp; Eastern UP</div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div className="text-3xl sm:text-4xl font-serif font-bold text-[#0F172A]">16+ Yrs</div>
+                <div className="text-3xl sm:text-4xl font-serif font-bold text-[#0F172A]">
+                  <AnimatedCounter end={16} suffix="+ Yrs" />
+                </div>
                 <div className="text-xs text-slate-600 font-semibold mt-1">Established Heritage (2010)</div>
                 <div className="text-[11px] text-slate-400 mt-0.5">RoC Kanpur: U64200UP2010PTC041308</div>
               </div>

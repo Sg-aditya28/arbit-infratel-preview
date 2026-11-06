@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { AnimatedCounter } from './AnimatedCounter';
 import { 
   Building2, 
   MapPin, 
@@ -192,7 +193,9 @@ export const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({
           {/* Key Stat Badges */}
           <div className="flex flex-wrap items-center gap-2.5">
             <div className="bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm text-xs font-semibold text-[#0F172A]">
-              <span className="text-[#2C8FEA] font-serif font-bold text-base mr-1.5">38+</span>
+              <span className="text-[#2C8FEA] font-serif font-bold text-base mr-1.5">
+                <AnimatedCounter end={38} suffix="+" />
+              </span>
               Projects Delivered
             </div>
             <div className="bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm text-xs font-semibold text-[#0F172A]">
