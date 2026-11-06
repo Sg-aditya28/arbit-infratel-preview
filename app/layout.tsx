@@ -18,12 +18,15 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Arbit Infratel Private Limited | Shaping Skylines • Building Legacies',
+  title: 'Arbit Infratel Private Limited | Rooted in Trust • Built to Endure',
   description:
-    'Arbit Infratel Private Limited (Est. 2010, Gorakhpur) is a premier ₹100+ Crore Indian infrastructure engineering, civil EPC, and commercial real estate conglomerate. "Home to Eminent Retail Brands & Luxury Living". Registered UP-RERA Promoter (UPRERAPRM160411).',
+    'Arbit Infratel Private Limited (Est. 2010, Gorakhpur) has delivered 38+ landmark projects across Eastern UP — home to Westside, Reliance Fashion Factory, and Metro Shoes. Registered UP-RERA Promoter (UPRERAPRM160411).',
   keywords: [
     'Arbit Infratel Private Limited',
     'Arbit The 25',
+    'Arbit 34 Westside Gorakhpur',
+    'Arbit 36 Reliance Fashion Factory',
+    'Arbit Vibhuti Metro Shoes Golghar',
     'Civil EPC Gorakhpur',
     'Commercial Real Estate Gorakhpur',
     'UPRERAPRM160411',
@@ -39,8 +42,8 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://sg-aditya28.github.io/arbit-infratel-preview/',
     siteName: 'Arbit Infratel Private Limited',
-    title: 'Arbit Infratel Private Limited | Home to Eminent Retail Brands & Luxury Living',
-    description: 'Premier infrastructure engineering, civil EPC, and commercial real estate conglomerate in Gorakhpur, UP. Shaping Skylines, Building Legacies.',
+    title: 'Arbit Infratel Private Limited | Rooted in Trust • Built to Endure',
+    description: 'Premier infrastructure engineering, civil EPC, and commercial real estate in Gorakhpur, UP. 38+ projects delivered.',
     images: [
       {
         url: 'https://sg-aditya28.github.io/arbit-infratel-preview/arbit-logo-hd.jpg',
@@ -52,8 +55,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Arbit Infratel Private Limited | Shaping Skylines, Building Legacies',
-    description: 'Home to Eminent Retail Brands & Luxury Living • Telecom Infrastructure O&M (Altius Network)',
+    title: 'Arbit Infratel Private Limited | Rooted in Trust • Built to Endure',
+    description: '38+ commercial landmarks delivered across Gorakhpur • Civil EPC & Telecom Infrastructure O&M',
     images: ['https://sg-aditya28.github.io/arbit-infratel-preview/arbit-logo-hd.jpg'],
   },
   icons: {

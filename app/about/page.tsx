@@ -38,13 +38,13 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
             <div className="max-w-3xl">
               <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                SHAPING SKYLINES • BUILDING LEGACIES • EST. 2010
+                ROOTED IN TRUST • BUILT TO ENDURE • EST. 2010
               </div>
               <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
                 Corporate Heritage &amp; Profile
               </h1>
               <p className="text-sm sm:text-base text-stone-600 mt-3 leading-relaxed max-w-2xl font-normal">
-                Arbit Infratel Private Limited (Est. 2010, Gorakhpur) is a premier ₹100+ Crore Indian infrastructure engineering, civil EPC, and commercial real estate conglomerate registered under UP-RERA (UPRERAPRM160411).
+                Arbit Infratel Private Limited (Est. 2010, Gorakhpur) has grown from local civil foundations into a trusted developer with 38+ landmark projects delivered across Eastern Uttar Pradesh. Registered UP-RERA Promoter (UPRERAPRM160411).
               </p>
             </div>
           </div>
@@ -103,12 +103,12 @@ export default function AboutPage() {
 
               {/* Milestone 4 */}
               <div className="bg-[#F6F5F2] border border-stone-200 p-6 shadow-sm">
-                <div className="text-2xl font-serif font-bold text-[#0B131E]">2024–26</div>
+                <div className="text-2xl font-serif font-bold text-[#0B131E]">2022–26</div>
                 <div className="text-xs font-mono font-bold text-[#9B7C44] uppercase mt-1 mb-2">
-                  ARBIT THE 25 &amp; ₹100+ CR
+                  38+ PROJECTS DELIVERED
                 </div>
                 <p className="text-xs text-stone-600 leading-relaxed font-normal">
-                  Developing flagship commercial landmark <em>Arbit The 25</em> (UPRERAPRJ218427) — "Home to Eminent Retail Brands & Luxury Living" in Gorakhpur while surpassing ₹100+ Crore in cumulative execution.
+                  Delivered Arbit 34 (Westside), Arbit 36 (Reliance Fashion Factory), Arbit Vibhuti (Metro Shoes), and flagship commercial landmark <em>Arbit The 25</em> (UPRERAPRJ218427) in Gorakhpur.
                 </p>
               </div>
 

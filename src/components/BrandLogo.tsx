@@ -26,8 +26,8 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 
   const sloganSizes = {
     sm: 'text-[8px] tracking-[0.16em]',
-    md: 'text-[8.5px] sm:text-[9.5px] tracking-[0.20em]',
-    lg: 'text-[10px] sm:text-[11px] tracking-[0.22em]',
+    md: 'text-[8.5px] sm:text-[9.5px] tracking-[0.18em]',
+    lg: 'text-[10px] sm:text-[11px] tracking-[0.20em]',
   };
 
   // Official clean brand logo extracted from social media:
@@ -47,14 +47,14 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
         loading="eager"
       />
 
-      {/* 2. New Modern Slogan Visible Directly Below the Logo */}
+      {/* 2. Grounded Slogan for Gorakhpur Founder Visible Directly Below the Logo */}
       {showSubtitle && (
         <span
           className={`font-mono font-bold uppercase mt-1 leading-none ${sloganSizes[size]} ${
             isLight ? 'text-[#B8965A]' : 'text-[#9B7C44]'
           }`}
         >
-          SHAPING SKYLINES • BUILDING LEGACIES
+          ROOTED IN TRUST • BUILT TO ENDURE
         </span>
       )}
     </div>

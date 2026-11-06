@@ -36,7 +36,7 @@ export const ConglomerateStory: React.FC<ConglomerateStoryProps> = ({ onOpenEnqu
           <div className="lg:col-span-7">
             
             <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-              SHAPING SKYLINES • 01 // CORPORATE HERITAGE
+              ROOTED IN TRUST • 01 // CORPORATE HERITAGE
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-serif text-[#0B131E] font-normal leading-tight mb-4">

@@ -103,30 +103,20 @@ export const ExecutiveEnquirySection: React.FC<ExecutiveEnquirySectionProps> = (
             </div>
 
             
-              {/* Official Verified Social Channels */}
+              {/* Verified Community Presence */}
               <div className="mt-5 pt-4 border-t border-stone-200">
                 <div className="text-[10px] font-mono tracking-wider text-[#9B7C44] uppercase font-bold mb-2">
-                  OFFICIAL SOCIAL MEDIA
+                  VERIFIED LOCAL PRESENCE
                 </div>
                 <div className="grid grid-cols-2 gap-2 text-xs">
-                  <a
-                    href="https://www.facebook.com/arbitinfratel/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 bg-stone-50 hover:bg-[#1877F2]/10 border border-stone-200 hover:border-[#1877F2] transition-colors flex items-center gap-2 group"
-                  >
-                    <span className="font-bold text-[#1877F2]">Facebook</span>
-                    <span className="text-[10px] text-stone-500 font-mono ml-auto">6.4K+</span>
-                  </a>
-                  <a
-                    href="https://www.instagram.com/arbitinfratel/?hl=en"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 bg-stone-50 hover:bg-[#E4405F]/10 border border-stone-200 hover:border-[#E4405F] transition-colors flex items-center gap-2 group"
-                  >
-                    <span className="font-bold text-[#E4405F]">Instagram</span>
-                    <span className="text-[10px] text-stone-500 font-mono ml-auto">2.5K+</span>
-                  </a>
+                  <div className="p-2.5 bg-stone-50 border border-stone-200 flex items-center justify-between">
+                    <span className="font-bold text-[#0B131E]">Community</span>
+                    <span className="text-[10px] text-stone-500 font-mono">6.4K+</span>
+                  </div>
+                  <div className="p-2.5 bg-stone-50 border border-stone-200 flex items-center justify-between">
+                    <span className="font-bold text-[#0B131E]">Followers</span>
+                    <span className="text-[10px] text-stone-500 font-mono">2.5K+</span>
+                  </div>
                 </div>
               </div>
 

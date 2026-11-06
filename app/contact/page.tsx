@@ -37,7 +37,7 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
             <div className="max-w-3xl">
               <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                PROJECT DESK &amp; CORPORATE HQ
+                ROOTED IN TRUST • ENQUIRE &amp; CONTACT DESK
               </div>
               <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
                 Enquire &amp; Contact Desk

@@ -47,13 +47,13 @@ export default function ProjectsPage() {
           <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
             <div className="max-w-3xl">
               <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                COMMERCIAL REAL ESTATE &amp; INFRASTRUCTURE
+                ROOTED IN TRUST • COMMERCIAL &amp; CIVIL PORTFOLIO
               </div>
               <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
                 Landmark Projects &amp; Commissions
               </h1>
               <p className="text-sm sm:text-base text-stone-600 mt-3 leading-relaxed max-w-2xl font-normal">
-                Discover Arbit Infratel&apos;s flagship development <em>Arbit The 25</em> alongside key institutional civil EPC and utility grid contracts across Uttar Pradesh.
+                Explore our commercial retail landmarks in Gorakhpur — including Arbit The 25, Arbit 34 (Westside), Arbit 36 (Reliance Fashion Factory), and Arbit Vibhuti (Metro Shoes), alongside our civil and telecom infrastructure contracts.
               </p>
             </div>
           </div>

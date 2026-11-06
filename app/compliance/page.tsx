@@ -33,19 +33,17 @@ export default function CompliancePage() {
       <Navbar onOpenEnquiry={handleOpenDrawer} />
 
       <main className="flex-1">
-        {/* Page Executive Hero Text Section (Dark Architectural Style per design) */}
-        <section className="bg-[#0B131E] text-white py-16 sm:py-20 border-b border-[#B8965A]/30 relative overflow-hidden select-none">
-          <div className="absolute inset-0 architectural-grid opacity-20 pointer-events-none"></div>
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 relative z-10">
+        {/* Page Executive Hero Text Section (Clean Light Style) */}
+        <section className="bg-white text-[#0B131E] py-12 sm:py-16 border-b border-stone-200">
+          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
             <div className="max-w-3xl">
-              <div className="flex items-center gap-3 text-xs tracking-[0.25em] uppercase font-bold text-[#B8965A] mb-3">
-                <span className="w-6 h-px bg-[#B8965A]"></span>
-                <span>STATUTORY DUE DILIGENCE &amp; RERA REGISTRY</span>
+              <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
+                ROOTED IN TRUST • STATUTORY COMPLIANCE &amp; RERA
               </div>
-              <h1 className="text-3xl sm:text-5xl font-serif text-white font-normal tracking-tight">
+              <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
                 Governance, RERA &amp; Compliance Vault
               </h1>
-              <p className="text-sm sm:text-base text-stone-300 font-sans font-light mt-4 leading-relaxed max-w-2xl">
+              <p className="text-sm sm:text-base text-stone-600 mt-3 leading-relaxed max-w-2xl font-normal">
                 Official regulatory registrations, 100% UP-RERA escrow banking protocols, and statutory corporate filings of Arbit Infratel Private Limited (Gorakhpur, UP).
               </p>
             </div>

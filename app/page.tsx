@@ -86,15 +86,15 @@ export default function HomePage() {
               {/* Right 7 Cols: Clear & Concise Overview */}
               <div className="lg:col-span-7">
                 <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                  SHAPING SKYLINES • ABOUT ARBIT INFRATEL
+                  ROOTED IN TRUST • ABOUT ARBIT INFRATEL
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl font-serif text-[#0B131E] font-normal leading-tight mb-4">
-                  Building Premier Commercial Destinations &amp; Infrastructure
+                  Building Commercial Landmarks &amp; Civil Infrastructure
                 </h2>
 
                 <p className="text-sm sm:text-base text-stone-600 leading-relaxed mb-6 font-normal">
-                  Incorporated in 2010 in Gorakhpur, <strong className="text-[#0B131E]">Arbit Infratel Private Limited</strong> is "Home to Eminent Retail Brands & Luxury Living", delivering landmark commercial developments, Class-A civil EPC projects, and passive telecom O&M infrastructure across Uttar Pradesh.
+                  Founded in 2010 in Gorakhpur, <strong className="text-[#0B131E]">Arbit Infratel Private Limited</strong> has delivered 38+ successful projects across Eastern Uttar Pradesh. We build prime retail destinations for national brands, execute Class-A civil works, and maintain essential telecom infrastructure.
                 </p>
 
                 {/* 4 Simple Key Metric Cards (Light) */}
