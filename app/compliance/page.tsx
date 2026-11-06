@@ -41,7 +41,7 @@ export default function CompliancePage() {
                 <ShieldCheck className="w-3.5 h-3.5" />
                 <span>Statutory Compliance &bull; UP-RERA Escrow</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-sans font-bold text-white tracking-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal text-white tracking-tight">
                 Governance, RERA &amp; Compliance Vault
               </h1>
               <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-normal">

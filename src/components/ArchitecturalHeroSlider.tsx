@@ -150,9 +150,9 @@ export const ArchitecturalHeroSlider: React.FC<ArchitecturalHeroSliderProps> = (
             </div>
 
             {/* Monumental Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-sans font-extrabold leading-[1.12] tracking-tight mb-4">
-              <span className="block text-white">{slide.titlePart1}</span>
-              <span className="block text-[#2C8FEA]">{slide.titlePart2}</span>
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-normal leading-[1.08] tracking-tight mb-4">
+              <span className="block text-white font-serif">{slide.titlePart1}</span>
+              <span className="block text-[#2C8FEA] font-serif italic font-light">{slide.titlePart2}</span>
             </h1>
 
             {/* Subtitle with real project note */}

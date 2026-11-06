@@ -180,7 +180,7 @@ export const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({
               <span>Real Delivered Landmarks • Gorakhpur</span>
             </div>
             
-            <h2 className="text-3xl sm:text-4xl font-sans font-bold text-[#0F172A] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-[#0F172A] tracking-tight">
               On-Ground Projects &amp; Building Gallery
             </h2>
             
@@ -192,11 +192,11 @@ export const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({
           {/* Key Stat Badges */}
           <div className="flex flex-wrap items-center gap-2.5">
             <div className="bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm text-xs font-semibold text-[#0F172A]">
-              <span className="text-[#2C8FEA] font-bold text-sm mr-1.5">38+</span>
+              <span className="text-[#2C8FEA] font-serif font-bold text-base mr-1.5">38+</span>
               Projects Delivered
             </div>
             <div className="bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm text-xs font-semibold text-[#0F172A]">
-              <span className="text-[#2C8FEA] font-bold text-sm mr-1.5">100%</span>
+              <span className="text-[#2C8FEA] font-serif font-bold text-base mr-1.5">100%</span>
               Real Photo Proof
             </div>
           </div>
@@ -305,7 +305,7 @@ export const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({
               {/* Card Meta Content */}
               <div className="p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="font-sans font-bold text-base text-[#0F172A] group-hover:text-[#2C8FEA] transition-colors leading-snug mb-2">
+                  <h3 className="font-serif font-bold text-lg text-[#0F172A] group-hover:text-[#2C8FEA] transition-colors leading-snug mb-2">
                     {item.title}
                   </h3>
                   <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed">
@@ -382,7 +382,7 @@ export const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({
                   {selectedItem.project}
                 </div>
 
-                <h3 className="text-xl sm:text-2xl font-bold font-sans text-[#0F172A] leading-tight mb-3">
+                <h3 className="text-2xl sm:text-3xl font-serif font-normal text-[#0F172A] leading-tight mb-3">
                   {selectedItem.title}
                 </h3>
 
@@ -429,3 +429,4 @@ export const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({
     </section>
   );
 };
+

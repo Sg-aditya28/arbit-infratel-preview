@@ -50,7 +50,7 @@ export default function ProjectsPage() {
                 <Building2 className="w-3.5 h-3.5" />
                 <span>Building with Purpose &bull; Leading with Pride</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-sans font-bold text-white tracking-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal text-white tracking-tight">
                 Landmark Projects &amp; Commissions
               </h1>
               <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-normal">
@@ -76,7 +76,7 @@ export default function ProjectsPage() {
               <div className="text-xs font-bold text-[#2C8FEA] uppercase tracking-wider mb-1">
                 CIVIL LINES &bull; GORAKHNATH &bull; GOLGHAR
               </div>
-              <h3 className="text-2xl sm:text-3xl font-sans font-bold text-[#0F172A]">
+              <h3 className="text-2xl sm:text-3xl font-serif font-normal text-[#0F172A]">
                 Schedule an Accompanied Site Inspection
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 mt-1 font-normal">

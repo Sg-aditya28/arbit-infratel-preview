@@ -49,7 +49,7 @@ export default function GalleryPage() {
                 <Building2 className="w-3.5 h-3.5" />
                 <span>38+ Real Deliveries • Gorakhpur, UP</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-sans font-bold text-white tracking-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal text-white tracking-tight">
                 Real Building &amp; Project Gallery
               </h1>
               <p className="text-slate-300 mt-3 text-base sm:text-lg leading-relaxed">
@@ -70,7 +70,7 @@ export default function GalleryPage() {
                 <div className="text-xs font-semibold uppercase tracking-wider text-[#2C8FEA] mb-2">
                   CIVIL LINES &bull; GORAKHNATH &bull; GOLGHAR
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-2">
+                <h2 className="text-2xl sm:text-3xl font-serif font-normal tracking-tight text-white mb-2">
                   Schedule an Accompanied Site Inspection
                 </h2>
                 <p className="text-slate-300 text-sm leading-relaxed">
@@ -111,3 +111,4 @@ export default function GalleryPage() {
     </div>
   );
 }
+

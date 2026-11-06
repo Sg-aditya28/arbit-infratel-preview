@@ -66,25 +66,25 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#2C8FEA] font-sans">38+</div>
+                <div className="text-3xl sm:text-4xl font-serif font-bold text-[#2C8FEA]">38+</div>
                 <div className="text-xs text-slate-600 font-semibold mt-1">Landmark Projects Delivered</div>
                 <div className="text-[11px] text-slate-400 mt-0.5">Across Gorakhpur &amp; Eastern UP</div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] font-sans">16+ Yrs</div>
+                <div className="text-3xl sm:text-4xl font-serif font-bold text-[#0F172A]">16+ Yrs</div>
                 <div className="text-xs text-slate-600 font-semibold mt-1">Established Heritage (2010)</div>
                 <div className="text-[11px] text-slate-400 mt-0.5">RoC Kanpur: U64200UP2010PTC041308</div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div className="text-2xl sm:text-3xl font-extrabold text-[#0F172A] font-sans">2.8M+</div>
+                <div className="text-3xl sm:text-4xl font-serif font-bold text-[#0F172A]">2.8M+</div>
                 <div className="text-xs text-slate-600 font-semibold mt-1">Sq.Ft. Real Estate Footprint</div>
                 <div className="text-[11px] text-slate-400 mt-0.5">Commercial Retail &amp; EPC</div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                <div className="text-2xl sm:text-3xl font-extrabold text-emerald-600 font-sans">UP-RERA</div>
+                <div className="text-3xl sm:text-4xl font-serif font-bold text-emerald-600">UP-RERA</div>
                 <div className="text-xs text-slate-600 font-semibold mt-1">Registered Promoter</div>
                 <div className="text-[11px] text-slate-400 font-mono mt-0.5">UPRERAPRM160411</div>
               </div>
@@ -105,7 +105,7 @@ export default function HomePage() {
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>PREMIER RETAIL DESTINATIONS</span>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-sans font-bold text-[#0F172A] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-[#0F172A] tracking-tight">
                   Home to Eminent Retail Brands
                 </h2>
                 <p className="text-slate-600 mt-2 text-sm max-w-2xl">
@@ -144,7 +144,7 @@ export default function HomePage() {
                       <MapPin className="w-3.5 h-3.5 text-[#2C8FEA]" />
                       <span>Prime Commercial Corridor, Gorakhpur</span>
                     </div>
-                    <h3 className="text-xl font-bold font-sans">
+                    <h3 className="text-xl sm:text-2xl font-serif font-bold">
                       Gorakhpur’s Biggest Westside Store
                     </h3>
                   </div>
@@ -188,7 +188,7 @@ export default function HomePage() {
                       <MapPin className="w-3.5 h-3.5 text-[#2C8FEA]" />
                       <span>Gorakhnath, Gorakhpur</span>
                     </div>
-                    <h3 className="text-xl font-bold font-sans">
+                    <h3 className="text-xl sm:text-2xl font-serif font-bold">
                       Reliance Fashion Factory Retail Center
                     </h3>
                   </div>
@@ -228,7 +228,7 @@ export default function HomePage() {
                   <Layers className="w-3.5 h-3.5" />
                   <span>DIVERSIFIED CAPABILITIES</span>
                 </div>
-                <h2 className="text-3xl sm:text-4xl font-sans font-bold text-[#0F172A] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-[#0F172A] tracking-tight">
                   Three Pillar Divisions
                 </h2>
               </div>
@@ -253,7 +253,7 @@ export default function HomePage() {
                   <div className="text-[11px] font-mono text-[#2C8FEA] font-bold uppercase tracking-wider mb-1">
                     01 // COMMERCIAL
                   </div>
-                  <h3 className="text-xl font-bold font-sans text-[#0F172A] mb-3">
+                  <h3 className="text-2xl font-serif font-bold text-[#0F172A] mb-3">
                     Commercial Retail Centers
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mb-6">
@@ -282,7 +282,7 @@ export default function HomePage() {
                   <div className="text-[11px] font-mono text-[#2C8FEA] font-bold uppercase tracking-wider mb-1">
                     02 // CIVIL EPC
                   </div>
-                  <h3 className="text-xl font-bold font-sans text-[#0F172A] mb-3">
+                  <h3 className="text-2xl font-serif font-bold text-[#0F172A] mb-3">
                     Civil &amp; Municipal Works
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mb-6">
@@ -311,7 +311,7 @@ export default function HomePage() {
                   <div className="text-[11px] font-mono text-[#2C8FEA] font-bold uppercase tracking-wider mb-1">
                     03 // UTILITY GRIDS
                   </div>
-                  <h3 className="text-xl font-bold font-sans text-[#0F172A] mb-3">
+                  <h3 className="text-2xl font-serif font-bold text-[#0F172A] mb-3">
                     Telecom Infrastructure
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed mb-6">
@@ -366,7 +366,7 @@ export default function HomePage() {
                   <span>FOUNDER ROOTS &bull; GORAKHPUR</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-sans font-bold text-[#0F172A] leading-tight mb-4">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-[#0F172A] leading-tight mb-4">
                   Building with Purpose. Leading with Pride.
                 </h2>
 
@@ -410,7 +410,7 @@ export default function HomePage() {
                   <ShieldCheck className="w-4 h-4" />
                   <span>STATUTORY INTEGRITY</span>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-sans font-bold text-[#0F172A]">
+                <h3 className="text-2xl sm:text-3xl font-serif font-normal text-[#0F172A]">
                   UP-RERA Escrow &amp; RoC Kanpur Compliant
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">

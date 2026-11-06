@@ -41,7 +41,7 @@ export default function AboutPage() {
                 <Building2 className="w-3.5 h-3.5" />
                 <span>Building with Purpose &bull; Leading with Pride &bull; Est. 2010</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-sans font-bold text-white tracking-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal text-white tracking-tight">
                 Corporate Heritage &amp; Profile
               </h1>
               <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-normal">
@@ -62,7 +62,7 @@ export default function AboutPage() {
               <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#2C8FEA] uppercase tracking-wider mb-2">
                 <span>16 YEARS OF PROVEN DELIVERY (2010–2026)</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-sans font-bold text-[#0F172A]">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-[#0F172A]">
                 Track Record &amp; Milestones
               </h2>
             </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
               
               {/* Milestone 1 */}
               <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-[#2C8FEA] transition-all">
-                <div className="text-2xl font-bold font-sans text-[#2C8FEA]">2010</div>
+                <div className="text-3xl font-serif font-bold text-[#2C8FEA]">2010</div>
                 <div className="text-xs font-bold text-[#0F172A] uppercase mt-1 mb-2">
                   INCORPORATION
                 </div>
@@ -82,7 +82,7 @@ export default function AboutPage() {
 
               {/* Milestone 2 */}
               <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-[#2C8FEA] transition-all">
-                <div className="text-2xl font-bold font-sans text-[#2C8FEA]">2015</div>
+                <div className="text-3xl font-serif font-bold text-[#2C8FEA]">2015</div>
                 <div className="text-xs font-bold text-[#0F172A] uppercase mt-1 mb-2">
                   TELECOM SCALE
                 </div>
@@ -93,7 +93,7 @@ export default function AboutPage() {
 
               {/* Milestone 3 */}
               <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-[#2C8FEA] transition-all">
-                <div className="text-2xl font-bold font-sans text-[#2C8FEA]">2018</div>
+                <div className="text-3xl font-serif font-bold text-[#2C8FEA]">2018</div>
                 <div className="text-xs font-bold text-[#0F172A] uppercase mt-1 mb-2">
                   CLASS-A PWD &amp; RERA
                 </div>
@@ -104,7 +104,7 @@ export default function AboutPage() {
 
               {/* Milestone 4 */}
               <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-[#2C8FEA] transition-all">
-                <div className="text-2xl font-bold font-sans text-[#2C8FEA]">2022–26</div>
+                <div className="text-3xl font-serif font-bold text-[#2C8FEA]">2022–26</div>
                 <div className="text-xs font-bold text-[#0F172A] uppercase mt-1 mb-2">
                   38+ DELIVERIES
                 </div>

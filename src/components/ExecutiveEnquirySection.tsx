@@ -49,7 +49,7 @@ export const ExecutiveEnquirySection: React.FC<ExecutiveEnquirySectionProps> = (
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/10 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3">
             <span>Direct Commercial &amp; Tender Desk</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-sans font-bold text-[#0F172A] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal text-[#0F172A] tracking-tight">
             Corporate Enquiry &amp; Liaison Desk
           </h2>
           <p className="text-sm text-slate-600 mt-2 leading-relaxed font-normal">
