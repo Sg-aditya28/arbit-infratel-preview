@@ -33,18 +33,31 @@ export default function AboutPage() {
       <Navbar onOpenEnquiry={handleOpenDrawer} />
 
       <main className="flex-1">
-        {/* Executive Page Hero */}
-        <section className="bg-gradient-to-b from-slate-900 via-[#0F172A] to-slate-900 text-white py-14 sm:py-18 border-b border-slate-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Executive Page Hero with Real Building Background Image */}
+        <section className="relative bg-[#0A1128] text-white py-16 sm:py-24 border-b border-slate-800 overflow-hidden select-none">
+          {/* Real Building Background Image with Low Opacity */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src="/arbit-infratel-preview/social/post_6.jpg"
+              alt="Arbit Corporate Heritage Landmark"
+              className="w-full h-full object-cover object-center opacity-20"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#070D18] via-[#0A1128]/95 to-[#0A1128]/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#070D18] via-transparent to-black/40"></div>
+            <div className="absolute inset-0 architectural-grid opacity-20 pointer-events-none"></div>
+          </div>
+
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3 border border-[#2C8FEA]/30">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3 border border-[#2C8FEA]/30 backdrop-blur-sm">
                 <Building2 className="w-3.5 h-3.5" />
                 <span>Building with Purpose &bull; Leading with Pride &bull; Est. 2010</span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal text-white tracking-tight">
                 Corporate Heritage &amp; Profile
               </h1>
-              <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-normal">
+              <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-light">
                 Arbit Infratel Private Limited (Est. 2010, Gorakhpur) has grown from local civil foundations into Eastern Uttar Pradesh’s trusted developer with 38+ landmark projects delivered. Registered UP-RERA Promoter (UPRERAPRM160411).
               </p>
             </div>

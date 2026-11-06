@@ -116,7 +116,7 @@ export const ArchitecturalHeroSlider: React.FC<ArchitecturalHeroSliderProps> = (
             src={s.image}
             alt={s.project}
             className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${
-              idx === activeSlide ? 'opacity-35 scale-100' : 'opacity-0 scale-105 pointer-events-none'
+              idx === activeSlide ? 'opacity-20 scale-100' : 'opacity-0 scale-105 pointer-events-none'
             }`}
             loading={idx === 0 ? 'eager' : 'lazy'}
           />

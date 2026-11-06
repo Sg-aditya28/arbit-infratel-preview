@@ -32,18 +32,31 @@ export default function LeadershipPage() {
       <Navbar onOpenEnquiry={handleOpenDrawer} />
 
       <main className="flex-1">
-        {/* Executive Header */}
-        <section className="bg-gradient-to-b from-slate-900 via-[#0F172A] to-slate-900 text-white py-14 sm:py-18 border-b border-slate-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Executive Header with Real Leadership Background Image */}
+        <section className="relative bg-[#0A1128] text-white py-16 sm:py-24 border-b border-slate-800 overflow-hidden select-none">
+          {/* Real Background Image with Low Opacity */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src="/arbit-infratel-preview/social/post_5.jpg"
+              alt="Arbit Executive Leadership"
+              className="w-full h-full object-cover object-center opacity-20"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#070D18] via-[#0A1128]/95 to-[#0A1128]/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#070D18] via-transparent to-black/40"></div>
+            <div className="absolute inset-0 architectural-grid opacity-20 pointer-events-none"></div>
+          </div>
+
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3 border border-[#2C8FEA]/30">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3 border border-[#2C8FEA]/30 backdrop-blur-sm">
                 <Users className="w-3.5 h-3.5" />
                 <span>Executive Governance &bull; Board of Directors</span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal text-white tracking-tight">
                 Executive Leadership
               </h1>
-              <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-normal">
+              <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-light">
                 Founding directors combining over 16 years of hands-on civil engineering, fiscal discipline, and regulatory integrity across Uttar Pradesh.
               </p>
             </div>

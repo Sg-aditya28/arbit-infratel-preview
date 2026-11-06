@@ -41,18 +41,31 @@ export default function GalleryPage() {
       <Navbar onOpenEnquiry={handleOpenDrawer} />
 
       <main className="flex-1">
-        {/* Gallery Header styled with Logo Azure Blue */}
-        <div className="bg-gradient-to-b from-slate-900 via-[#0F172A] to-slate-900 text-white py-16 sm:py-20 border-b border-slate-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Gallery Header styled with Logo Azure Blue & Real Building Background Image */}
+        <div className="relative bg-[#0A1128] text-white py-16 sm:py-24 border-b border-slate-800 overflow-hidden select-none">
+          {/* Background Image with Low Opacity & Gradient Overlays */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src="/arbit-infratel-preview/social/post_6.jpg"
+              alt="Arbit Commercial Development"
+              className="w-full h-full object-cover object-center opacity-20"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#070D18] via-[#0A1128]/95 to-[#0A1128]/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#070D18] via-transparent to-black/40"></div>
+            <div className="absolute inset-0 architectural-grid opacity-20 pointer-events-none"></div>
+          </div>
+
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-4 border border-[#2C8FEA]/30">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-4 border border-[#2C8FEA]/30 backdrop-blur-sm">
                 <Building2 className="w-3.5 h-3.5" />
                 <span>38+ Real Deliveries • Gorakhpur, UP</span>
               </div>
               <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal text-white tracking-tight">
                 Real Building &amp; Project Gallery
               </h1>
-              <p className="text-slate-300 mt-3 text-base sm:text-lg leading-relaxed">
+              <p className="text-slate-300 mt-3 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
                 Authentic photographic record of Arbit Infratel&apos;s delivered commercial retail complexes, anchor store launches, and ongoing civil engineering projects in Gorakhpur.
               </p>
             </div>
@@ -65,20 +78,28 @@ export default function GalleryPage() {
         {/* Accompanied Site Inspection Callout */}
         <section className="py-16 bg-white border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-r from-slate-900 to-[#0F172A] rounded-2xl p-8 sm:p-12 text-white flex flex-col lg:flex-row items-center justify-between gap-8 border border-slate-800 shadow-xl">
-              <div className="max-w-2xl">
+            <div className="relative overflow-hidden bg-[#0A1128] rounded-2xl p-8 sm:p-12 text-white flex flex-col lg:flex-row items-center justify-between gap-8 border border-slate-800 shadow-xl">
+              <img
+                src="/arbit-infratel-preview/social/post_1.jpg"
+                alt="Arbit Infratel Landmark Retail Center"
+                className="absolute inset-0 w-full h-full object-cover object-center opacity-20 pointer-events-none"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#070D18] via-[#0A1128]/95 to-[#0A1128]/70 pointer-events-none"></div>
+
+              <div className="relative z-10 max-w-2xl">
                 <div className="text-xs font-semibold uppercase tracking-wider text-[#2C8FEA] mb-2">
                   CIVIL LINES &bull; GORAKHNATH &bull; GOLGHAR
                 </div>
                 <h2 className="text-2xl sm:text-3xl font-serif font-normal tracking-tight text-white mb-2">
                   Schedule an Accompanied Site Inspection
                 </h2>
-                <p className="text-slate-300 text-sm leading-relaxed">
+                <p className="text-slate-300 text-sm leading-relaxed font-light">
                   Visit any of our operational retail centers or tour our flagship commercial spaces under development in Gorakhpur.
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+              <div className="relative z-10 flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
                 <button
                   type="button"
                   onClick={() => handleOpenDrawer('Accompanied Site Inspection')}

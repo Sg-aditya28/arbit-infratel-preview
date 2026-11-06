@@ -404,8 +404,9 @@ export default function HomePage() {
         {/* 7. Statutory Assurance Strip */}
         <section className="py-14 bg-slate-50 border-b border-slate-200 select-none">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-6">
-              <div className="space-y-1.5">
+            <div className="relative overflow-hidden bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-6">
+              <div className="absolute right-0 top-0 bottom-0 w-1/3 architectural-grid opacity-25 pointer-events-none"></div>
+              <div className="space-y-1.5 relative z-10">
                 <div className="flex items-center gap-2 text-xs font-bold text-[#2C8FEA] uppercase tracking-wider">
                   <ShieldCheck className="w-4 h-4" />
                   <span>STATUTORY INTEGRITY</span>
@@ -418,7 +419,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+              <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto relative z-10">
                 <Link
                   href="/compliance"
                   className="bg-[#2C8FEA] hover:bg-[#1E75D8] text-white py-3 px-6 rounded-lg text-xs font-bold tracking-wider uppercase text-center transition-colors shadow-md shadow-[#2C8FEA]/20 whitespace-nowrap"
