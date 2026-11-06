@@ -48,7 +48,7 @@ export const ConglomerateStory: React.FC<ConglomerateStoryProps> = ({ onOpenEnqu
             </p>
 
             <p className="text-xs sm:text-sm text-stone-500 leading-relaxed mb-6 font-normal">
-              Led by Directors <strong className="text-[#0B131E]">Abhishek Agrawal</strong> and <strong className="text-[#0B131E]">Anand Kumar Mishra</strong>, our operations adhere strictly to 100% UP-RERA escrow banking, institutional safety protocols, and computerized construction execution.
+              Led by Directors <strong className="text-[#0B131E]">Anand Kumar Mishra</strong> and <strong className="text-[#0B131E]">Abhishek Agrawal</strong>, our operations adhere strictly to 100% UP-RERA escrow banking, institutional safety protocols, and computerized construction execution.
             </p>
 
             {/* 4 Clean Light Feature Blocks */}

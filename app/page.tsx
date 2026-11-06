@@ -380,7 +380,7 @@ export default function HomePage() {
                 </p>
 
                 <p className="text-sm text-slate-600 leading-relaxed mb-6">
-                  Led by founding directors <strong className="text-[#0F172A]">Abhishek Agrawal</strong> and <strong className="text-[#0F172A]">Anand Kumar Mishra</strong>, we take immense pride in delivering spaces that elevate the city&apos;s commercial landscape while maintaining 100% statutory escrow compliance.
+                  Led by founding directors <strong className="text-[#0F172A]">Anand Kumar Mishra</strong> and <strong className="text-[#0F172A]">Abhishek Agrawal</strong>, we take immense pride in delivering spaces that elevate the city&apos;s commercial landscape while maintaining 100% statutory escrow compliance.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-3">

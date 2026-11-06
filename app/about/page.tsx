@@ -139,7 +139,7 @@ export default function AboutPage() {
                 BOARD OF DIRECTORS
               </div>
               <h3 className="text-2xl sm:text-3xl font-serif text-[#0B131E]">
-                Directors Abhishek Agrawal &amp; Anand Kumar Mishra
+                Directors Anand Kumar Mishra &amp; Abhishek Agrawal
               </h3>
               <p className="text-xs sm:text-sm text-stone-600 font-normal max-w-xl">
                 Explore our corporate governance, executive engineering leadership, and statutory credentials.

@@ -548,12 +548,12 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               </h4>
               <div className="space-y-2 text-xs text-slate-300">
                 <div className="flex items-center justify-between border-b border-slate-800 pb-2">
-                  <span>Abhishek Agrawal (Director):</span>
-                  <span className="font-mono text-emerald-400 font-bold">Strategic Projects</span>
-                </div>
-                <div className="flex items-center justify-between">
                   <span>Anand Kumar Mishra (Director):</span>
                   <span className="font-mono text-amber-400 font-bold">EPC &amp; Civil Works</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span>Abhishek Agrawal (Director):</span>
+                  <span className="font-mono text-emerald-400 font-bold">Strategic Projects</span>
                 </div>
               </div>
             </div>

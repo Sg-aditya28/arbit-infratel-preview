@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     'UPRERAPRM160411',
     'UPRERAPRJ218427',
     'U64200UP2010PTC041308',
-    'Abhishek Agrawal Arbit',
     'Anand Kumar Mishra Arbit',
+    'Abhishek Agrawal Arbit',
     'Altius Network Telecom',
     'Civil Lines Gorakhpur Real Estate'
   ],

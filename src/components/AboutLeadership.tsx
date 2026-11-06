@@ -94,31 +94,8 @@ export const AboutLeadership: React.FC = () => {
                 Executive Leadership
               </h3>
 
-              {/* Director 1: Abhishek Agrawal */}
+              {/* Director 1: Anand Kumar Mishra */}
               <div className="bg-slate-50 border border-slate-200 p-4 rounded-lg mb-4 hover:border-[#A37D4C]/60 transition-colors">
-                <div className="flex items-center gap-3">
-                  <div className="w-11 h-11 rounded-full bg-[#0B192C] border-2 border-[#A37D4C] flex items-center justify-center text-[#D5BE9E] font-bold text-base flex-shrink-0">
-                    AA
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold text-[#0B192C]">
-                      Abhishek Agrawal
-                    </h4>
-                    <p className="text-xs text-[#8B6533] font-semibold">
-                      Director &amp; Co-Founder
-                    </p>
-                  </div>
-                </div>
-                <p className="text-xs text-slate-600 mt-3 leading-relaxed">
-                  Leads corporate strategy, statutory project acquisition, municipal liaison, and institutional real estate development. Instrumental in bringing the landmark &quot;Arbit The 25&quot; project from blueprint to reality.
-                </p>
-                <div className="mt-2 text-[10px] text-slate-400 font-mono">
-                  DIN: Active • MCA Form DIR-12 Compliant
-                </div>
-              </div>
-
-              {/* Director 2: Anand Kumar Mishra */}
-              <div className="bg-slate-50 border border-slate-200 p-4 rounded-lg hover:border-[#A37D4C]/60 transition-colors">
                 <div className="flex items-center gap-3">
                   <div className="w-11 h-11 rounded-full bg-[#0B192C] border-2 border-[#A37D4C] flex items-center justify-center text-[#D5BE9E] font-bold text-base flex-shrink-0">
                     AM
@@ -134,6 +111,29 @@ export const AboutLeadership: React.FC = () => {
                 </div>
                 <p className="text-xs text-slate-600 mt-3 leading-relaxed">
                   Oversees site operations, plant &amp; heavy machinery logistics, procurement, and EPC contract engineering. Over 18+ years of technical experience in foundation engineering and telecom network rollouts.
+                </p>
+                <div className="mt-2 text-[10px] text-slate-400 font-mono">
+                  DIN: Active • MCA Form DIR-12 Compliant
+                </div>
+              </div>
+
+              {/* Director 2: Abhishek Agrawal */}
+              <div className="bg-slate-50 border border-slate-200 p-4 rounded-lg hover:border-[#A37D4C]/60 transition-colors">
+                <div className="flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-full bg-[#0B192C] border-2 border-[#A37D4C] flex items-center justify-center text-[#D5BE9E] font-bold text-base flex-shrink-0">
+                    AA
+                  </div>
+                  <div>
+                    <h4 className="text-base font-bold text-[#0B192C]">
+                      Abhishek Agrawal
+                    </h4>
+                    <p className="text-xs text-[#8B6533] font-semibold">
+                      Director &amp; Co-Founder
+                    </p>
+                  </div>
+                </div>
+                <p className="text-xs text-slate-600 mt-3 leading-relaxed">
+                  Leads corporate strategy, statutory project acquisition, municipal liaison, and institutional real estate development. Instrumental in bringing the landmark &quot;Arbit The 25&quot; project from blueprint to reality.
                 </p>
                 <div className="mt-2 text-[10px] text-slate-400 font-mono">
                   DIN: Active • MCA Form DIR-12 Compliant

@@ -61,7 +61,7 @@ export const STATUTORY_DOCS: StatutoryDoc[] = [
     status: 'Annual Compliant',
     fileSize: '3.8 MB • Executive Dossier',
     docCode: 'ARB-CORP-DIR-2024',
-    description: 'Corporate leadership dossier detailing Board Directors Abhishek Agrawal & Anand Kumar Mishra, registered office deed, banking consortia, and 15-year statutory financial standing.'
+    description: 'Corporate leadership dossier detailing Board Directors Anand Kumar Mishra & Abhishek Agrawal, registered office deed, banking consortia, and 15-year statutory financial standing.'
   }
 ];
 
@@ -143,7 +143,7 @@ export const ComplianceVault: React.FC<ComplianceVaultProps> = ({
                       <div className="text-xs text-slate-500 mt-1 max-w-xs line-clamp-1">
                         {doc.id === 'cin-mca' && 'Ministry of Corporate Affairs Registered'}
                         {doc.id === 'rera-promoter' && 'Registered Promoter Certificate'}
-                        {doc.id === 'corporate-deck' && 'Directors: Abhishek Agrawal & Anand Kumar Mishra'}
+                        {doc.id === 'corporate-deck' && 'Directors: Anand Kumar Mishra & Abhishek Agrawal'}
                       </div>
                     </td>
 
@@ -233,7 +233,7 @@ export const ComplianceVault: React.FC<ComplianceVaultProps> = ({
               Directors&apos; Statutory Governance
             </div>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Managed under the active leadership of Directors <strong>Abhishek Agrawal</strong> and <strong>Anand Kumar Mishra</strong> with seamless MCA compliance since 2010.
+              Managed under the active leadership of Directors <strong>Anand Kumar Mishra</strong> and <strong>Abhishek Agrawal</strong> with seamless MCA compliance since 2010.
             </p>
           </div>
         </div>

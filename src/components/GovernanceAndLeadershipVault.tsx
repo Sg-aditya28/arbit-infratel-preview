@@ -110,35 +110,12 @@ export const GovernanceAndLeadershipVault: React.FC = () => {
               </p>
             </div>
 
-            {/* Director 1 Card */}
+            {/* Director 1 Card: Mr. Anand Kumar Mishra */}
             <div className="bg-white border border-stone-200 p-6 shadow-sm hover:border-[#B8965A] transition-colors">
               <div className="flex items-start justify-between">
                 <div>
                   <div className="text-[10px] font-mono tracking-wider text-[#9B7C44] uppercase font-bold">
-                    FOUNDING DIRECTOR
-                  </div>
-                  <h4 className="text-xl font-serif text-[#0B131E] font-bold mt-0.5">
-                    Mr. Abhishek Agrawal
-                  </h4>
-                  <div className="text-xs text-stone-500 font-sans mt-0.5">
-                    Director, Arbit Infratel Private Limited
-                  </div>
-                </div>
-                <div className="w-10 h-10 bg-stone-100 border border-stone-300 text-[#0B131E] flex items-center justify-center font-serif font-bold text-base">
-                  AA
-                </div>
-              </div>
-              <p className="text-xs text-stone-600 mt-4 leading-relaxed border-t border-stone-100 pt-3 font-normal">
-                Oversees corporate strategy, banking consortia relations, and flagship commercial developments including <em>Arbit The 25</em> in Gorakhpur.
-              </p>
-            </div>
-
-            {/* Director 2 Card */}
-            <div className="bg-white border border-stone-200 p-6 shadow-sm hover:border-[#B8965A] transition-colors">
-              <div className="flex items-start justify-between">
-                <div>
-                  <div className="text-[10px] font-mono tracking-wider text-[#9B7C44] uppercase font-bold">
-                    TECHNICAL DIRECTOR
+                    EXECUTIVE DIRECTOR
                   </div>
                   <h4 className="text-xl font-serif text-[#0B131E] font-bold mt-0.5">
                     Mr. Anand Kumar Mishra
@@ -153,6 +130,29 @@ export const GovernanceAndLeadershipVault: React.FC = () => {
               </div>
               <p className="text-xs text-stone-600 mt-4 leading-relaxed border-t border-stone-100 pt-3 font-normal">
                 Directs civil EPC execution, plant and machinery deployment, and municipal infrastructure works across Uttar Pradesh.
+              </p>
+            </div>
+
+            {/* Director 2 Card: Mr. Abhishek Agrawal */}
+            <div className="bg-white border border-stone-200 p-6 shadow-sm hover:border-[#B8965A] transition-colors">
+              <div className="flex items-start justify-between">
+                <div>
+                  <div className="text-[10px] font-mono tracking-wider text-[#9B7C44] uppercase font-bold">
+                    EXECUTIVE DIRECTOR
+                  </div>
+                  <h4 className="text-xl font-serif text-[#0B131E] font-bold mt-0.5">
+                    Mr. Abhishek Agrawal
+                  </h4>
+                  <div className="text-xs text-stone-500 font-sans mt-0.5">
+                    Director, Arbit Infratel Private Limited
+                  </div>
+                </div>
+                <div className="w-10 h-10 bg-stone-100 border border-stone-300 text-[#0B131E] flex items-center justify-center font-serif font-bold text-base">
+                  AA
+                </div>
+              </div>
+              <p className="text-xs text-stone-600 mt-4 leading-relaxed border-t border-stone-100 pt-3 font-normal">
+                Oversees corporate strategy, banking consortia relations, and flagship commercial developments including <em>Arbit The 25</em> in Gorakhpur.
               </p>
             </div>
 

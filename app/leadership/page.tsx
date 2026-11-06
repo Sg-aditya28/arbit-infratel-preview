@@ -78,66 +78,13 @@ export default function LeadershipPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
               
-              {/* Director 1: Mr. Abhishek Agrawal */}
+              {/* Director 1: Mr. Anand Kumar Mishra */}
               <div className="bg-white border border-stone-200 shadow-sm p-8 flex flex-col justify-between hover:border-[#B8965A] transition-all">
                 <div>
                   <div className="flex items-center justify-between pb-5 border-b border-stone-200 mb-5">
                     <div>
                       <div className="text-[10px] font-mono tracking-wider text-[#9B7C44] uppercase font-bold">
-                        FOUNDING DIRECTOR
-                      </div>
-                      <h3 className="text-2xl font-serif text-[#0B131E] font-bold mt-1">
-                        Mr. Abhishek Agrawal
-                      </h3>
-                      <div className="text-xs text-stone-500 font-sans mt-0.5">
-                        Director, Arbit Infratel Private Limited (Since 2010)
-                      </div>
-                    </div>
-                    <div className="w-12 h-12 bg-stone-100 text-[#0B131E] flex items-center justify-center font-serif text-xl font-bold border border-stone-300">
-                      AA
-                    </div>
-                  </div>
-
-                  <p className="text-xs sm:text-sm text-stone-600 leading-relaxed mb-6 font-normal">
-                    Directs corporate financial structuring, commercial acquisitions, and banking consortia alliances. He champions 100% UP-RERA escrow governance and spearheads flagship developments like <em>Arbit The 25</em>.
-                  </p>
-
-                  <div className="space-y-2 text-xs text-stone-700 mb-6 border-t border-stone-100 pt-4 font-normal">
-                    <div className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-[#9B7C44] flex-shrink-0 mt-0.5" />
-                      <span>Commercial real estate acquisitions and Master Planning</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-[#9B7C44] flex-shrink-0 mt-0.5" />
-                      <span>Tier-1 scheduled banking consortia and escrow management</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-[#9B7C44] flex-shrink-0 mt-0.5" />
-                      <span>Corporate investor relations and UP-RERA statutory filings</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-stone-200 flex items-center justify-between text-xs font-mono">
-                  <span className="text-stone-500">Civil Lines HQ</span>
-                  <button
-                    type="button"
-                    suppressHydrationWarning
-                    onClick={() => handleOpenDrawer('Meeting Request: Mr. Abhishek Agrawal')}
-                    className="text-[#0B131E] font-bold hover:text-[#9B7C44] underline uppercase tracking-wider"
-                  >
-                    Request Meeting
-                  </button>
-                </div>
-              </div>
-
-              {/* Director 2: Mr. Anand Kumar Mishra */}
-              <div className="bg-white border border-stone-200 shadow-sm p-8 flex flex-col justify-between hover:border-[#B8965A] transition-all">
-                <div>
-                  <div className="flex items-center justify-between pb-5 border-b border-stone-200 mb-5">
-                    <div>
-                      <div className="text-[10px] font-mono tracking-wider text-[#9B7C44] uppercase font-bold">
-                        TECHNICAL DIRECTOR
+                        EXECUTIVE DIRECTOR
                       </div>
                       <h3 className="text-2xl font-serif text-[#0B131E] font-bold mt-1">
                         Mr. Anand Kumar Mishra
@@ -180,6 +127,59 @@ export default function LeadershipPage() {
                     className="text-[#0B131E] font-bold hover:text-[#9B7C44] underline uppercase tracking-wider"
                   >
                     Technical Liaison
+                  </button>
+                </div>
+              </div>
+
+              {/* Director 2: Mr. Abhishek Agrawal */}
+              <div className="bg-white border border-stone-200 shadow-sm p-8 flex flex-col justify-between hover:border-[#B8965A] transition-all">
+                <div>
+                  <div className="flex items-center justify-between pb-5 border-b border-stone-200 mb-5">
+                    <div>
+                      <div className="text-[10px] font-mono tracking-wider text-[#9B7C44] uppercase font-bold">
+                        EXECUTIVE DIRECTOR
+                      </div>
+                      <h3 className="text-2xl font-serif text-[#0B131E] font-bold mt-1">
+                        Mr. Abhishek Agrawal
+                      </h3>
+                      <div className="text-xs text-stone-500 font-sans mt-0.5">
+                        Director, Arbit Infratel Private Limited (Since 2010)
+                      </div>
+                    </div>
+                    <div className="w-12 h-12 bg-stone-100 text-[#0B131E] flex items-center justify-center font-serif text-xl font-bold border border-stone-300">
+                      AA
+                    </div>
+                  </div>
+
+                  <p className="text-xs sm:text-sm text-stone-600 leading-relaxed mb-6 font-normal">
+                    Directs corporate financial structuring, commercial acquisitions, and banking consortia alliances. He champions 100% UP-RERA escrow governance and spearheads flagship developments like <em>Arbit The 25</em>.
+                  </p>
+
+                  <div className="space-y-2 text-xs text-stone-700 mb-6 border-t border-stone-100 pt-4 font-normal">
+                    <div className="flex items-start gap-2">
+                      <Check className="w-4 h-4 text-[#9B7C44] flex-shrink-0 mt-0.5" />
+                      <span>Commercial real estate acquisitions and Master Planning</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Check className="w-4 h-4 text-[#9B7C44] flex-shrink-0 mt-0.5" />
+                      <span>Tier-1 scheduled banking consortia and escrow management</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <Check className="w-4 h-4 text-[#9B7C44] flex-shrink-0 mt-0.5" />
+                      <span>Corporate investor relations and UP-RERA statutory filings</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-stone-200 flex items-center justify-between text-xs font-mono">
+                  <span className="text-stone-500">Civil Lines HQ</span>
+                  <button
+                    type="button"
+                    suppressHydrationWarning
+                    onClick={() => handleOpenDrawer('Meeting Request: Mr. Abhishek Agrawal')}
+                    className="text-[#0B131E] font-bold hover:text-[#9B7C44] underline uppercase tracking-wider"
+                  >
+                    Request Meeting
                   </button>
                 </div>
               </div>
