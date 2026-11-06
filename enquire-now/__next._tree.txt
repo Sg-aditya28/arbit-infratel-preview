@@ -4,4 +4,4 @@
 :HL["/arbit-infratel-preview/_next/static/media/d8aeca813a9ab546-s.p.18rizl4rsrl42.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"enquire-now","h":96,"c":"$Q2"}]]
-0:{"b":"CF6OcMALPg5NLr-QLl9UJ","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"3tk35RdeUZ99oyZfR_HCG","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
