@@ -38,23 +38,25 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     : '/arbit-infratel-preview/arbit-logo-transparent.png';
 
   return (
-    <div className={`inline-flex flex-col items-start select-none ${className}`}>
-      {/* 1. The Single Official Brand Logo from Social Media */}
+    <div className={`group inline-flex flex-col items-start select-none ${className}`}>
+      {/* 1. Remastered Authentic Brand Logo (Azure/White Gradient + Sculpted Solar Gold Spire) */}
       <img
         src={logoSrc}
         alt="Arbit Infratel"
-        className={`${imageSizes[size]} object-contain transition-transform duration-200 hover:scale-[1.02]`}
+        className={`${imageSizes[size]} object-contain transition-all duration-300 group-hover:scale-[1.02] group-hover:brightness-105`}
         loading="eager"
       />
 
-      {/* 2. Official Brand Motto from Logo: Building with Purpose. Leading with Pride. */}
+      {/* 2. Official Brand Motto with Architectural Gold Diamond Accent */}
       {showSubtitle && (
         <span
-          className={`font-sans mt-1 leading-tight ${sloganSizes[size]} ${
-            isLight ? 'text-[#2C8FEA]' : 'text-[#1E293B]'
+          className={`font-sans mt-1 leading-tight flex items-center ${sloganSizes[size]} ${
+            isLight ? 'text-slate-300' : 'text-[#1E293B]'
           }`}
         >
-          Building with Purpose. Leading with Pride.
+          <span>Building with Purpose</span>
+          <span className={`mx-1.5 text-[7px] ${isLight ? 'text-[#F59E0B]' : 'text-[#D0B161]'}`}>◆</span>
+          <span>Leading with Pride.</span>
         </span>
       )}
     </div>
