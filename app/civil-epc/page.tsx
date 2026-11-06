@@ -8,7 +8,7 @@ import { ExecutionPortfolioGrid } from '@/src/components/ExecutionPortfolioGrid'
 import { CorporateEnquiryDrawer } from '@/src/components/CorporateEnquiryDrawer';
 import { Footer } from '@/src/components/Footer';
 import { Toast, type ToastMessage } from '@/src/components/Toast';
-import { HardHat, ShieldCheck, CheckCircle2, Truck, Cpu, Layers, ArrowRight, Download } from 'lucide-react';
+import { HardHat, ShieldCheck, CheckCircle2, Truck, Cpu, Layers, ArrowRight, Download, Building2 } from 'lucide-react';
 
 const MACHINERY_FLEET = [
   { item: 'Computerized Mobile Concrete Batching Plants (CP-30 / CP-60)', qty: '2 Units', cap: '120 m³/hr combined output' },
@@ -53,21 +53,22 @@ function CivilEpcMain() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F6F5F2] text-[#181A1F]">
+    <div className="min-h-screen flex flex-col bg-white text-[#0F172A]">
       <Navbar onOpenEnquiry={handleOpenDrawer} />
 
       <main className="flex-1">
-        {/* Executive Banner (Light & Clean) */}
-        <section className="bg-white text-[#0B131E] py-12 sm:py-16 border-b border-stone-200">
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
+        {/* Executive Banner */}
+        <section className="bg-gradient-to-b from-slate-900 via-[#0F172A] to-slate-900 text-white py-14 sm:py-18 border-b border-slate-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                CLASS-A PWD CONTRACTOR • NIC 64200
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3 border border-[#2C8FEA]/30">
+                <Building2 className="w-3.5 h-3.5" />
+                <span>Class-A PWD Contractor &bull; NIC 64200</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
+              <h1 className="text-3xl sm:text-5xl font-sans font-bold text-white tracking-tight">
                 Civil EPC &amp; Infrastructure
               </h1>
-              <p className="text-sm sm:text-base text-stone-600 mt-3 leading-relaxed max-w-2xl font-normal">
+              <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-normal">
                 Class-A PWD registered contractor delivering heavy structural frameworks, bridges, institutional campuses, and optical fiber utility networks across Uttar Pradesh.
               </p>
             </div>

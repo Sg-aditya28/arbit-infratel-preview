@@ -29,86 +29,87 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F6F5F2] text-[#181A1F]">
+    <div className="min-h-screen flex flex-col bg-white text-[#0F172A]">
       <Navbar onOpenEnquiry={handleOpenDrawer} />
 
       <main className="flex-1">
-        {/* Executive Page Hero (Light & Simple) */}
-        <section className="bg-white text-[#0B131E] py-12 sm:py-16 border-b border-stone-200">
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
+        {/* Executive Page Hero */}
+        <section className="bg-gradient-to-b from-slate-900 via-[#0F172A] to-slate-900 text-white py-14 sm:py-18 border-b border-slate-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                ROOTED IN TRUST • BUILT TO ENDURE • EST. 2010
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3 border border-[#2C8FEA]/30">
+                <Building2 className="w-3.5 h-3.5" />
+                <span>Building with Purpose &bull; Leading with Pride &bull; Est. 2010</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
+              <h1 className="text-3xl sm:text-5xl font-sans font-bold text-white tracking-tight">
                 Corporate Heritage &amp; Profile
               </h1>
-              <p className="text-sm sm:text-base text-stone-600 mt-3 leading-relaxed max-w-2xl font-normal">
-                Arbit Infratel Private Limited (Est. 2010, Gorakhpur) has grown from local civil foundations into a trusted developer with 38+ landmark projects delivered across Eastern Uttar Pradesh. Registered UP-RERA Promoter (UPRERAPRM160411).
+              <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-normal">
+                Arbit Infratel Private Limited (Est. 2010, Gorakhpur) has grown from local civil foundations into Eastern Uttar Pradesh’s trusted developer with 38+ landmark projects delivered. Registered UP-RERA Promoter (UPRERAPRM160411).
               </p>
             </div>
           </div>
         </section>
 
-        {/* The Conglomerate Story (Simple & Light) */}
+        {/* The Conglomerate Story */}
         <ConglomerateStory onOpenEnquiry={handleOpenDrawer} />
 
-        {/* 16-Year Heritage Timeline Section (Clean Light Grid) */}
-        <section className="py-16 sm:py-24 bg-white border-b border-stone-200 select-none">
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
+        {/* 16-Year Heritage Timeline Section */}
+        <section className="py-16 sm:py-24 bg-slate-50 border-b border-slate-200 select-none">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div className="max-w-2xl mb-12">
-              <div className="text-xs font-mono tracking-widest text-[#9B7C44] uppercase font-bold mb-1.5">
-                MILESTONES (2010–2026)
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#2C8FEA] uppercase tracking-wider mb-2">
+                <span>16 YEARS OF PROVEN DELIVERY (2010–2026)</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-serif text-[#0B131E] font-normal">
-                16-Year Track Record of Delivery
+              <h2 className="text-3xl sm:text-4xl font-sans font-bold text-[#0F172A]">
+                Track Record &amp; Milestones
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-2">
               
               {/* Milestone 1 */}
-              <div className="bg-[#F6F5F2] border border-stone-200 p-6 shadow-sm">
-                <div className="text-2xl font-serif font-bold text-[#0B131E]">2010</div>
-                <div className="text-xs font-mono font-bold text-[#9B7C44] uppercase mt-1 mb-2">
+              <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-[#2C8FEA] transition-all">
+                <div className="text-2xl font-bold font-sans text-[#2C8FEA]">2010</div>
+                <div className="text-xs font-bold text-[#0F172A] uppercase mt-1 mb-2">
                   INCORPORATION
                 </div>
-                <p className="text-xs text-stone-600 leading-relaxed font-normal">
-                  Incorporated at RoC Kanpur in Gorakhpur (CIN: U64200UP2010PTC041308), initiating passive telecom utility trenching and civil engineering works.
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Incorporated at RoC Kanpur in Gorakhpur (CIN: U64200UP2010PTC041308), initiating telecom utility trenching and civil engineering works.
                 </p>
               </div>
 
               {/* Milestone 2 */}
-              <div className="bg-[#F6F5F2] border border-stone-200 p-6 shadow-sm">
-                <div className="text-2xl font-serif font-bold text-[#0B131E]">2015</div>
-                <div className="text-xs font-mono font-bold text-[#9B7C44] uppercase mt-1 mb-2">
+              <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-[#2C8FEA] transition-all">
+                <div className="text-2xl font-bold font-sans text-[#2C8FEA]">2015</div>
+                <div className="text-xs font-bold text-[#0F172A] uppercase mt-1 mb-2">
                   TELECOM SCALE
                 </div>
-                <p className="text-xs text-stone-600 leading-relaxed font-normal">
-                  Partnered with Altius Network for Telecom O&M (IME), expanding trenchless directional drilling to 850+ km of optical fiber ducting and erecting 150+ telecom towers.
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Partnered with Altius Network for Telecom O&amp;M, expanding trenchless directional drilling to 850+ km of optical fiber and 150+ telecom towers.
                 </p>
               </div>
 
               {/* Milestone 3 */}
-              <div className="bg-[#F6F5F2] border border-stone-200 p-6 shadow-sm">
-                <div className="text-2xl font-serif font-bold text-[#0B131E]">2018</div>
-                <div className="text-xs font-mono font-bold text-[#9B7C44] uppercase mt-1 mb-2">
+              <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-[#2C8FEA] transition-all">
+                <div className="text-2xl font-bold font-sans text-[#2C8FEA]">2018</div>
+                <div className="text-xs font-bold text-[#0F172A] uppercase mt-1 mb-2">
                   CLASS-A PWD &amp; RERA
                 </div>
-                <p className="text-xs text-stone-600 leading-relaxed font-normal">
+                <p className="text-xs text-slate-600 leading-relaxed">
                   Accredited as Class-A PWD contractor and obtained permanent UP-RERA promoter registration (UPRERAPRM160411) for commercial developments.
                 </p>
               </div>
 
               {/* Milestone 4 */}
-              <div className="bg-[#F6F5F2] border border-stone-200 p-6 shadow-sm">
-                <div className="text-2xl font-serif font-bold text-[#0B131E]">2022–26</div>
-                <div className="text-xs font-mono font-bold text-[#9B7C44] uppercase mt-1 mb-2">
-                  38+ PROJECTS DELIVERED
+              <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:border-[#2C8FEA] transition-all">
+                <div className="text-2xl font-bold font-sans text-[#2C8FEA]">2022–26</div>
+                <div className="text-xs font-bold text-[#0F172A] uppercase mt-1 mb-2">
+                  38+ DELIVERIES
                 </div>
-                <p className="text-xs text-stone-600 leading-relaxed font-normal">
-                  Delivered Arbit 34 (Westside), Arbit 36 (Reliance Fashion Factory), Arbit Vibhuti (Metro Shoes), and flagship commercial landmark <em>Arbit The 25</em> (UPRERAPRJ218427) in Gorakhpur.
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Delivered Arbit 34 (Westside), Arbit 36 (Reliance Fashion Factory), Arbit Vibhuti (Metro Shoes), V-Mart, and commercial development Arbit The 25.
                 </p>
               </div>
 

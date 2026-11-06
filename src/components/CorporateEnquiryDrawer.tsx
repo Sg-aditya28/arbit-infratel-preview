@@ -259,7 +259,7 @@ export const CorporateEnquiryDrawer: React.FC<CorporateEnquiryDrawerProps> = ({
                     type="submit"
                     suppressHydrationWarning
                     disabled={isSubmitting}
-                    className="w-full bg-[#0B131E] hover:bg-[#B8965A] text-white py-3.5 px-6 rounded-md text-xs font-bold uppercase tracking-[0.16em] transition-all duration-200 flex items-center justify-center cursor-pointer shadow-sm hover:shadow"
+                    className="w-full bg-[#2C8FEA] hover:bg-[#1E75D8] text-white py-3.5 px-6 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center justify-center cursor-pointer shadow-md shadow-[#2C8FEA]/20"
                   >
                     <span>{isSubmitting ? 'Submitting...' : 'Enquire'}</span>
                   </button>

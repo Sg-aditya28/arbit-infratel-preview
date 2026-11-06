@@ -41,19 +41,19 @@ export const ExecutiveEnquirySection: React.FC<ExecutiveEnquirySectionProps> = (
   };
 
   return (
-    <section id="corporate-enquiry" className="py-16 sm:py-24 bg-[#F6F5F2] text-[#0B131E] border-b border-stone-200 select-none">
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
+    <section id="corporate-enquiry" className="py-16 sm:py-24 bg-slate-50 text-[#0F172A] border-b border-slate-200 select-none">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
-          <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-            05 // DIRECT ENQUIRY &amp; TENDER DESK
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/10 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3">
+            <span>Direct Commercial &amp; Tender Desk</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-serif text-[#0B131E] font-normal tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-sans font-bold text-[#0F172A] tracking-tight">
             Corporate Enquiry &amp; Liaison Desk
           </h2>
-          <p className="text-sm text-stone-600 mt-2 leading-relaxed font-normal">
-            Submit your commercial leasing query, civil EPC tender requirement, or partnership proposal directly to our management team in Gorakhpur.
+          <p className="text-sm text-slate-600 mt-2 leading-relaxed font-normal">
+            Submit your commercial leasing query for Arbit 34, 36, Vibhuti, or The 25, civil EPC tender requirement, or partnership proposal directly to our management team in Gorakhpur.
           </p>
         </div>
 
@@ -285,7 +285,7 @@ export const ExecutiveEnquirySection: React.FC<ExecutiveEnquirySectionProps> = (
                     type="submit"
                     suppressHydrationWarning
                     disabled={isSubmitting}
-                    className="w-full bg-[#0B131E] hover:bg-[#B8965A] text-white py-3.5 px-6 rounded-md text-xs font-bold uppercase tracking-[0.16em] transition-all duration-200 flex items-center justify-center cursor-pointer shadow-sm hover:shadow"
+                    className="w-full bg-[#2C8FEA] hover:bg-[#1E75D8] text-white py-3.5 px-6 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center justify-center cursor-pointer shadow-md shadow-[#2C8FEA]/20"
                   >
                     <span>{isSubmitting ? 'Submitting...' : 'Enquire'}</span>
                   </button>

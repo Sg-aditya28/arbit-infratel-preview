@@ -38,28 +38,29 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F6F5F2] text-[#181A1F]">
+    <div className="min-h-screen flex flex-col bg-white text-[#0F172A]">
       <Navbar onOpenEnquiry={handleOpenDrawer} />
 
       <main className="flex-1">
-        {/* Executive Page Hero (Light & Clean) */}
-        <section className="bg-white text-[#0B131E] py-12 sm:py-16 border-b border-stone-200">
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
+        {/* Executive Page Hero */}
+        <section className="bg-gradient-to-b from-slate-900 via-[#0F172A] to-slate-900 text-white py-14 sm:py-18 border-b border-slate-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                ROOTED IN TRUST • COMMERCIAL &amp; CIVIL PORTFOLIO
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3 border border-[#2C8FEA]/30">
+                <Building2 className="w-3.5 h-3.5" />
+                <span>Building with Purpose &bull; Leading with Pride</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
+              <h1 className="text-3xl sm:text-5xl font-sans font-bold text-white tracking-tight">
                 Landmark Projects &amp; Commissions
               </h1>
-              <p className="text-sm sm:text-base text-stone-600 mt-3 leading-relaxed max-w-2xl font-normal">
-                Explore our commercial retail landmarks in Gorakhpur — including Arbit The 25, Arbit 34 (Westside), Arbit 36 (Reliance Fashion Factory), and Arbit Vibhuti (Metro Shoes), alongside our civil and telecom infrastructure contracts.
+              <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-normal">
+                Explore our real commercial retail landmarks in Gorakhpur — including Arbit 34 (Westside), Arbit 36 (Reliance Fashion Factory), Arbit Vibhuti (Metro Shoes), V-Mart, and Arbit The 25.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Flagship Monograph: Arbit The 25 (with interactive CAD blueprint SVG) */}
+        {/* Flagship Monograph: Arbit The 25 */}
         <SignatureDevelopmentMonograph
           onOpenEnquiry={handleOpenDrawer}
           onDownloadMemo={handleDownloadMemo}
@@ -68,17 +69,17 @@ export default function ProjectsPage() {
         {/* Selected Works Portfolio Grid */}
         <ExecutionPortfolioGrid onOpenEnquiry={handleOpenDrawer} />
 
-        {/* Accompanied Site Inspection Callout Strip (Light & Clean) */}
-        <section className="py-14 sm:py-18 bg-[#F6F5F2] border-b border-stone-200 select-none">
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-6">
+        {/* Accompanied Site Inspection Callout Strip */}
+        <section className="py-14 sm:py-18 bg-slate-50 border-b border-slate-200 select-none">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
-              <div className="text-xs font-mono tracking-widest text-[#9B7C44] uppercase font-bold mb-1">
-                CIVIL LINES • GORAKHPUR
+              <div className="text-xs font-bold text-[#2C8FEA] uppercase tracking-wider mb-1">
+                CIVIL LINES &bull; GORAKHNATH &bull; GOLGHAR
               </div>
-              <h3 className="text-2xl sm:text-3xl font-serif text-[#0B131E]">
+              <h3 className="text-2xl sm:text-3xl font-sans font-bold text-[#0F172A]">
                 Schedule an Accompanied Site Inspection
               </h3>
-              <p className="text-xs sm:text-sm text-stone-600 mt-1 font-normal">
+              <p className="text-xs sm:text-sm text-slate-600 mt-1 font-normal">
                 Inspect physical superstructure execution, retail frontage, and sanctioned architectural layout deeds.
               </p>
             </div>
@@ -87,7 +88,7 @@ export default function ProjectsPage() {
               type="button"
               suppressHydrationWarning
               onClick={() => handleOpenDrawer('Accompanied Site Inspection: Arbit The 25')}
-              className="bg-[#0B131E] hover:bg-[#B8965A] text-white px-7 py-3.5 text-xs tracking-wider uppercase font-bold transition-colors whitespace-nowrap shadow-sm"
+              className="bg-[#2C8FEA] hover:bg-[#1E75D8] text-white px-7 py-3.5 rounded-lg text-xs tracking-wider uppercase font-bold transition-colors whitespace-nowrap shadow-md shadow-[#2C8FEA]/20 cursor-pointer"
             >
               Book Site Visit
             </button>

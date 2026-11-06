@@ -3,10 +3,11 @@
 import { useState } from 'react';
 import { Navbar } from '@/src/components/Navbar';
 import { ExecutiveEnquirySection } from '@/src/components/ExecutiveEnquirySection';
-import { OfficialSocialMediaHub } from '@/src/components/OfficialSocialMediaHub';
+import { ProjectsGallery } from '@/src/components/ProjectsGallery';
 import { CorporateEnquiryDrawer } from '@/src/components/CorporateEnquiryDrawer';
 import { Footer } from '@/src/components/Footer';
 import { Toast, type ToastMessage } from '@/src/components/Toast';
+import { Building2 } from 'lucide-react';
 
 export default function ContactPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -28,22 +29,23 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F6F5F2] text-[#181A1F]">
+    <div className="min-h-screen flex flex-col bg-white text-[#0F172A]">
       <Navbar onOpenEnquiry={handleOpenDrawer} />
 
       <main className="flex-1">
-        {/* Executive Header (Light & Simple) */}
-        <section className="bg-white text-[#0B131E] py-12 sm:py-16 border-b border-stone-200">
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
+        {/* Executive Header */}
+        <section className="bg-gradient-to-b from-slate-900 via-[#0F172A] to-slate-900 text-white py-14 sm:py-18 border-b border-slate-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                ROOTED IN TRUST • ENQUIRE &amp; CONTACT DESK
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3 border border-[#2C8FEA]/30">
+                <Building2 className="w-3.5 h-3.5" />
+                <span>Building with Purpose &bull; Leading with Pride</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
+              <h1 className="text-3xl sm:text-5xl font-sans font-bold text-white tracking-tight">
                 Enquire &amp; Contact Desk
               </h1>
-              <p className="text-sm sm:text-base text-stone-600 mt-3 leading-relaxed max-w-2xl font-normal">
-                Connect directly with Arbit Infratel Private Limited for commercial leasing at <em>Arbit The 25</em>, civil EPC tenders, or joint ventures in Gorakhpur and Uttar Pradesh.
+              <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-normal">
+                Connect directly with Arbit Infratel Private Limited for commercial leasing at Arbit 34, Arbit 36, Arbit Vibhuti, Arbit The 25, or civil EPC tenders in Gorakhpur and Uttar Pradesh.
               </p>
             </div>
           </div>
@@ -56,8 +58,8 @@ export default function ContactPage() {
           }}
         />
 
-        {/* Official Social Media Community Strip */}
-        <OfficialSocialMediaHub />
+        {/* Real Landmark Building Gallery */}
+        <ProjectsGallery limit={4} showFilters={false} onOpenEnquiry={handleOpenDrawer} />
       </main>
 
       <Footer onOpenEnquiry={() => handleOpenDrawer('General Corporate Inquiry')} />

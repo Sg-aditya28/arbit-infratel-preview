@@ -18,11 +18,12 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Arbit Infratel Private Limited | Rooted in Trust • Built to Endure',
+  title: 'Arbit Infratel Private Limited | Building with Purpose. Leading with Pride.',
   description:
-    'Arbit Infratel Private Limited (Est. 2010, Gorakhpur) has delivered 38+ landmark projects across Eastern UP — home to Westside, Reliance Fashion Factory, and Metro Shoes. Registered UP-RERA Promoter (UPRERAPRM160411).',
+    'Arbit Infratel Private Limited (Est. 2010, Gorakhpur) — Building with Purpose. Leading with Pride. Over 38+ commercial landmarks delivered across Gorakhpur and Eastern UP. Registered UP-RERA Promoter (UPRERAPRM160411).',
   keywords: [
     'Arbit Infratel Private Limited',
+    'Building with Purpose Leading with Pride',
     'Arbit The 25',
     'Arbit 34 Westside Gorakhpur',
     'Arbit 36 Reliance Fashion Factory',
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://sg-aditya28.github.io/arbit-infratel-preview/',
     siteName: 'Arbit Infratel Private Limited',
-    title: 'Arbit Infratel Private Limited | Rooted in Trust • Built to Endure',
+    title: 'Arbit Infratel Private Limited | Building with Purpose. Leading with Pride.',
     description: 'Premier infrastructure engineering, civil EPC, and commercial real estate in Gorakhpur, UP. 38+ projects delivered.',
     images: [
       {
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Arbit Infratel Private Limited | Rooted in Trust • Built to Endure',
+    title: 'Arbit Infratel Private Limited | Building with Purpose. Leading with Pride.',
     description: '38+ commercial landmarks delivered across Gorakhpur • Civil EPC & Telecom Infrastructure O&M',
     images: ['https://sg-aditya28.github.io/arbit-infratel-preview/arbit-logo-hd.jpg'],
   },
@@ -80,7 +81,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/arbit-infratel-preview/favicon.svg" />
         <link rel="apple-touch-icon" href="/arbit-infratel-preview/favicon-192.png" />
       </head>
-      <body className="bg-[#F6F5F2] text-[#181A1F] font-sans antialiased selection:bg-[#B8965A] selection:text-white min-h-screen flex flex-col" suppressHydrationWarning>
+      <body className="bg-white text-[#0F172A] font-sans antialiased selection:bg-[#2C8FEA] selection:text-white min-h-screen flex flex-col" suppressHydrationWarning>
         {children}
       </body>
     </html>

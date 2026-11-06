@@ -25,9 +25,9 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   };
 
   const sloganSizes = {
-    sm: 'text-[8px] tracking-[0.16em]',
-    md: 'text-[8.5px] sm:text-[9.5px] tracking-[0.18em]',
-    lg: 'text-[10px] sm:text-[11px] tracking-[0.20em]',
+    sm: 'text-[9px] tracking-tight font-medium',
+    md: 'text-[10px] sm:text-[11px] tracking-tight font-semibold',
+    lg: 'text-[11px] sm:text-[12px] tracking-tight font-semibold',
   };
 
   // Official clean brand logo extracted from social media:
@@ -43,18 +43,18 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       <img
         src={logoSrc}
         alt="Arbit Infratel"
-        className={`${imageSizes[size]} object-contain transition-transform duration-200 hover:scale-102`}
+        className={`${imageSizes[size]} object-contain transition-transform duration-200 hover:scale-[1.02]`}
         loading="eager"
       />
 
-      {/* 2. Grounded Slogan for Gorakhpur Founder Visible Directly Below the Logo */}
+      {/* 2. Official Brand Motto from Logo: Building with Purpose. Leading with Pride. */}
       {showSubtitle && (
         <span
-          className={`font-mono font-bold uppercase mt-1 leading-none ${sloganSizes[size]} ${
-            isLight ? 'text-[#B8965A]' : 'text-[#9B7C44]'
+          className={`font-sans mt-1 leading-tight ${sloganSizes[size]} ${
+            isLight ? 'text-[#2C8FEA]' : 'text-[#1E293B]'
           }`}
         >
-          ROOTED IN TRUST • BUILT TO ENDURE
+          Building with Purpose. Leading with Pride.
         </span>
       )}
     </div>

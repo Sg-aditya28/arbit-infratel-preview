@@ -2,63 +2,75 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { ArrowRight, ChevronRight, ChevronLeft, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, ChevronRight, ChevronLeft, ArrowUpRight, Building2, MapPin, Sparkles } from 'lucide-react';
 
-interface TextSlide {
+interface HeroSlide {
   id: string;
-  index: string;
-  navLabel: string;
-  category: string;
   tag: string;
+  badge: string;
+  project: string;
+  location: string;
   titlePart1: string;
   titlePart2: string;
   subtext: string;
-  badge: string;
+  image: string;
   targetHref: string;
 }
 
-const TEXT_SLIDES: TextSlide[] = [
+const HERO_SLIDES: HeroSlide[] = [
   {
-    id: 'commercial',
-    index: '01',
-    navLabel: 'COMMERCIAL LANDMARKS',
-    category: 'Commercial Real Estate',
-    tag: 'ROOTED IN TRUST • GORAKHPUR',
-    titlePart1: 'Home to Eminent Retail Brands',
-    titlePart2: '& Commercial Landmarks.',
-    subtext: '38+ projects delivered across Gorakhpur — home to Westside, Reliance Fashion Factory, Metro Shoes, and flagship commercial spaces.',
-    badge: 'UP-RERA REGISTERED',
+    id: 'arbit-34-westside',
+    tag: 'FLAGSHIP COMMERCIAL RETAIL',
+    badge: 'ARBIT 34',
+    project: 'Gorakhpur’s Biggest Westside Store',
+    location: 'Gorakhpur, UP',
+    titlePart1: 'Building with Purpose.',
+    titlePart2: 'Leading with Pride.',
+    subtext:
+      'Home to Gorakhpur’s largest Westside store at Arbit 34. Delivering 38+ landmark commercial retail centers and civil infrastructure projects across Eastern Uttar Pradesh.',
+    image: '/arbit-infratel-preview/social/post_6.jpg',
+    targetHref: '/gallery',
+  },
+  {
+    id: 'arbit-36-reliance',
+    tag: 'COMMERCIAL RETAIL ANCHOR',
+    badge: 'ARBIT 36',
+    project: 'Reliance Fashion Factory',
+    location: 'Gorakhnath, Gorakhpur',
+    titlePart1: 'Prime Destinations for',
+    titlePart2: 'Eminent National Brands.',
+    subtext:
+      'Operational retail landmark at Arbit 36 hosting Reliance Fashion Factory, engineered with large-format retail floorplates, high ceilings, and dedicated customer parking.',
+    image: '/arbit-infratel-preview/social/post_1.jpg',
+    targetHref: '/gallery',
+  },
+  {
+    id: 'arbit-vibhuti-metro',
+    tag: 'CENTRAL RETAIL DISTRICT',
+    badge: 'ARBIT VIBHUTI',
+    project: 'Metro Shoes Flagship Showroom',
+    location: 'Golghar, Gorakhpur',
+    titlePart1: '38+ Delivered Projects',
+    titlePart2: '& Trusted Engineering.',
+    subtext:
+      'Prime commercial presence in Golghar at Arbit Vibhuti. Class-A registered contractor combining commercial real estate, civil EPC, and utility networks.',
+    image: '/arbit-infratel-preview/social/post_3.jpg',
+    targetHref: '/civil-epc',
+  },
+  {
+    id: 'arbit-vmart-retail',
+    tag: 'HIGH-FOOTFALL SHOPPING',
+    badge: 'ARBIT PREMISES',
+    project: 'V-Mart Commercial Store',
+    location: 'Commercial Corridor, Gorakhpur',
+    titlePart1: 'Transforming Skylines,',
+    titlePart2: 'Redefining Retail Spaces.',
+    subtext:
+      'V-Mart flagship megastore at Arbit Infratel premises — built with high-grade structural engineering, double-height retail slabs, and UP-RERA registered compliance.',
+    image: '/arbit-infratel-preview/social/post_4.jpg',
     targetHref: '/projects',
   },
-  {
-    id: 'civil-epc',
-    index: '02',
-    navLabel: 'CIVIL & EPC WORKS',
-    category: 'Civil EPC & Infrastructure',
-    tag: 'CLASS-A PWD CONTRACTOR • EST. 2010',
-    titlePart1: 'Civil Engineering, Roads',
-    titlePart2: '& Institutional Projects.',
-    subtext: 'Constructing robust public infrastructure, bridges, institutional campuses, and high-grade concrete roadways across Eastern UP.',
-    badge: 'CLASS-A CONTRACTOR',
-    targetHref: '/civil-epc',
-  },
-  {
-    id: 'telecom',
-    index: '03',
-    navLabel: 'TELECOM INFRASTRUCTURE',
-    category: 'Telecom Infrastructure',
-    tag: 'TELECOM O&M • ALTIUS NETWORK',
-    titlePart1: 'Telecom Operations',
-    titlePart2: '& Optical Fiber Networks.',
-    subtext: 'Trusted operations partner for Altius Network — managing 850+ km optical fiber ducting and 150+ telecom towers.',
-    badge: '850+ KM OFC • 150+ TOWERS',
-    targetHref: '/civil-epc',
-  },
 ];
-
-// Single high-resolution architectural photograph
-const HERO_BACKGROUND_IMAGE =
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=85';
 
 interface ArchitecturalHeroSliderProps {
   onOpenEnquiry?: (category?: string) => void;
@@ -70,73 +82,81 @@ export const ArchitecturalHeroSlider: React.FC<ArchitecturalHeroSliderProps> = (
   const [activeSlide, setActiveSlide] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Automatic text scrolling: smoothly cycles every 4.5 seconds
+  // Automatic cycling every 5 seconds
   useEffect(() => {
     timerRef.current = setInterval(() => {
-      setActiveSlide((prev) => (prev + 1) % TEXT_SLIDES.length);
-    }, 4500);
+      setActiveSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 5000);
 
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
   }, [activeSlide]);
 
-  const slide = TEXT_SLIDES[activeSlide];
+  const slide = HERO_SLIDES[activeSlide];
 
   const handleNext = () => {
     if (timerRef.current) clearInterval(timerRef.current);
-    setActiveSlide((prev) => (prev + 1) % TEXT_SLIDES.length);
+    setActiveSlide((prev) => (prev + 1) % HERO_SLIDES.length);
   };
 
   const handlePrev = () => {
     if (timerRef.current) clearInterval(timerRef.current);
-    setActiveSlide((prev) => (prev - 1 + TEXT_SLIDES.length) % TEXT_SLIDES.length);
+    setActiveSlide((prev) => (prev - 1 + HERO_SLIDES.length) % HERO_SLIDES.length);
   };
 
   return (
-    <section 
-      className="relative h-[calc(100vh-132px)] min-h-[540px] max-h-[820px] bg-[#0B131E] text-white flex flex-col justify-center overflow-hidden select-none"
-    >
+    <section className="relative min-h-[580px] sm:min-h-[640px] lg:h-[calc(100vh-130px)] max-h-[820px] bg-[#0A1128] text-white flex flex-col justify-center overflow-hidden select-none">
       
-      {/* BACKGROUND IMAGE: Decreased Opacity (22%) for high contrast & elegance */}
+      {/* REAL BUILDING BACKGROUND PHOTO with dynamic smooth crossfade */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={HERO_BACKGROUND_IMAGE}
-          alt="Arbit Infratel Architectural Landmark"
-          className="w-full h-full object-cover object-center opacity-22 filter brightness-90 contrast-110"
-          loading="eager"
-        />
-        {/* Architectural Gradient Masks */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B131E] via-[#0B131E]/80 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0B131E] via-transparent to-black/30"></div>
-        <div className="absolute inset-0 architectural-grid opacity-15 pointer-events-none"></div>
+        {HERO_SLIDES.map((s, idx) => (
+          <img
+            key={s.id}
+            src={s.image}
+            alt={s.project}
+            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${
+              idx === activeSlide ? 'opacity-35 scale-100' : 'opacity-0 scale-105 pointer-events-none'
+            }`}
+            loading={idx === 0 ? 'eager' : 'lazy'}
+          />
+        ))}
+
+        {/* Brand Architectural Gradients matching Logo Azure Blue & Slate Navy */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#070D18] via-[#0A1128]/90 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#070D18] via-transparent to-black/40"></div>
+        <div className="absolute inset-0 architectural-grid opacity-20 pointer-events-none"></div>
       </div>
 
-      {/* Vertical Hairline Guide */}
-      <div className="absolute top-0 bottom-0 left-8 sm:left-14 lg:left-20 w-px bg-[#B8965A]/25 z-10 pointer-events-none hidden md:block"></div>
-
-      {/* Main Editorial Hero Content: Perfectly Centered on the First Screen */}
-      <div className="relative z-20 max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 py-4 sm:py-6 lg:py-8 w-full flex-1 flex flex-col justify-center">
-        <div className="max-w-3xl pl-0 md:pl-8">
+      {/* Main Content Area */}
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 w-full flex-1 flex flex-col justify-center">
+        <div className="max-w-3xl">
           
-          {/* Animated Scrolling Text: Auto-cycling with 0.55s ease */}
           <div key={slide.id} className="animate-text-slide-up">
             
-            {/* Micro-Index Tag */}
-            <div className="flex flex-wrap items-center gap-2.5 text-xs tracking-[0.2em] uppercase font-bold text-[#B8965A] mb-3 sm:mb-4">
-              <span className="w-6 h-px bg-[#B8965A]"></span>
-              <span>{slide.tag}</span>
-              <span className="text-white/40 font-mono text-[11px]">[{slide.badge}]</span>
+            {/* Live Project Location Pill */}
+            <div className="flex flex-wrap items-center gap-2 mb-4">
+              <span className="inline-flex items-center gap-1.5 bg-[#2C8FEA] text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-md shadow-[#2C8FEA]/20">
+                <Building2 className="w-3.5 h-3.5" />
+                <span>{slide.badge}</span>
+              </span>
+              <span className="inline-flex items-center gap-1 bg-white/10 backdrop-blur-md text-slate-200 border border-white/20 px-3 py-1 rounded-full text-xs font-medium">
+                <MapPin className="w-3.5 h-3.5 text-[#2C8FEA]" />
+                <span>{slide.location}</span>
+              </span>
+              <span className="text-slate-400 text-xs font-semibold tracking-wider hidden sm:inline">
+                &bull; {slide.tag}
+              </span>
             </div>
 
             {/* Monumental Headline */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal leading-[1.12] tracking-tight mb-3 sm:mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-sans font-extrabold leading-[1.12] tracking-tight mb-4">
               <span className="block text-white">{slide.titlePart1}</span>
-              <span className="block text-[#B8965A] italic font-light">{slide.titlePart2}</span>
+              <span className="block text-[#2C8FEA]">{slide.titlePart2}</span>
             </h1>
 
-            {/* Subtext */}
-            <p className="text-xs sm:text-sm lg:text-base text-stone-300 font-sans font-light leading-relaxed mb-6 sm:mb-8 max-w-2xl border-l-2 border-[#B8965A]/60 pl-3.5 sm:pl-4">
+            {/* Subtitle with real project note */}
+            <p className="text-sm sm:text-base lg:text-lg text-slate-300 font-sans font-normal leading-relaxed mb-8 max-w-2xl border-l-2 border-[#2C8FEA] pl-4">
               {slide.subtext}
             </p>
 
@@ -145,49 +165,69 @@ export const ArchitecturalHeroSlider: React.FC<ArchitecturalHeroSliderProps> = (
           {/* Action CTAs */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             <Link
-              href={slide.targetHref}
-              className="bg-[#B8965A] hover:bg-[#CDB17E] text-[#0B131E] px-6 sm:px-7 py-3 sm:py-3.5 text-xs tracking-wider uppercase font-bold transition-all duration-200 flex items-center gap-2 group cursor-pointer shadow-md"
+              href="/gallery"
+              className="bg-[#2C8FEA] hover:bg-[#1E75D8] text-white px-6 sm:px-7 py-3.5 rounded-lg text-xs tracking-wider uppercase font-bold transition-all duration-200 flex items-center gap-2 shadow-lg shadow-[#2C8FEA]/30 cursor-pointer"
             >
-              <span>Explore {slide.navLabel}</span>
-              <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+              <span>Explore Real Photo Gallery</span>
+              <ArrowRight className="w-4 h-4" />
             </Link>
 
             <button
               type="button"
               suppressHydrationWarning
-              onClick={() => onOpenEnquiry?.(slide.category)}
-              className="border border-white/30 hover:border-[#B8965A] bg-white/5 hover:bg-white/10 text-white px-6 sm:px-7 py-3 sm:py-3.5 text-xs tracking-wider uppercase font-semibold transition-all duration-200 flex items-center gap-2 cursor-pointer backdrop-blur-sm"
+              onClick={() => onOpenEnquiry?.(slide.project)}
+              className="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 sm:px-7 py-3.5 rounded-lg text-xs tracking-wider uppercase font-bold transition-all duration-200 flex items-center gap-2 cursor-pointer backdrop-blur-sm"
             >
-              <span>Request Briefing</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-[#B8965A]" />
+              <span>Enquire Space</span>
+              <ArrowUpRight className="w-4 h-4 text-[#2C8FEA]" />
             </button>
 
             {/* Manual Controls & Indicator */}
-            <div className="flex items-center gap-1 ml-0 sm:ml-2 border border-white/20 bg-black/40 p-1">
+            <div className="flex items-center gap-1.5 ml-auto sm:ml-2 bg-black/50 border border-white/20 rounded-lg p-1 backdrop-blur-md">
               <button
                 type="button"
                 suppressHydrationWarning
                 onClick={handlePrev}
-                className="p-1.5 hover:bg-white/10 text-white/70 hover:text-white transition-colors cursor-pointer"
-                title="Previous Vision"
+                className="p-2 hover:bg-white/10 rounded text-slate-300 hover:text-white transition-colors cursor-pointer"
+                title="Previous Project"
                 aria-label="Previous Slide"
               >
-                <ChevronLeft className="w-3.5 h-3.5" />
+                <ChevronLeft className="w-4 h-4" />
               </button>
-              <span className="font-mono text-[11px] text-[#B8965A] px-2 font-bold">
-                0{activeSlide + 1} / 0{TEXT_SLIDES.length}
+              <span className="font-mono text-xs text-[#2C8FEA] px-2 font-bold">
+                0{activeSlide + 1} / 0{HERO_SLIDES.length}
               </span>
               <button
                 type="button"
                 suppressHydrationWarning
                 onClick={handleNext}
-                className="p-1.5 hover:bg-white/10 text-white/70 hover:text-white transition-colors cursor-pointer"
-                title="Next Vision"
+                className="p-2 hover:bg-white/10 rounded text-slate-300 hover:text-white transition-colors cursor-pointer"
+                title="Next Project"
                 aria-label="Next Slide"
               >
-                <ChevronRight className="w-3.5 h-3.5" />
+                <ChevronRight className="w-4 h-4" />
               </button>
             </div>
+          </div>
+
+          {/* Slide Indicator Dots */}
+          <div className="flex items-center gap-2 mt-8">
+            {HERO_SLIDES.map((s, idx) => (
+              <button
+                key={s.id}
+                type="button"
+                onClick={() => {
+                  if (timerRef.current) clearInterval(timerRef.current);
+                  setActiveSlide(idx);
+                }}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  idx === activeSlide
+                    ? 'w-8 bg-[#2C8FEA]'
+                    : 'w-2 bg-white/30 hover:bg-white/60'
+                }`}
+                aria-label={`Jump to slide ${idx + 1}`}
+              />
+            ))}
           </div>
 
         </div>

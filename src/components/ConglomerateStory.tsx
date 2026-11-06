@@ -18,16 +18,16 @@ export const ConglomerateStory: React.FC<ConglomerateStoryProps> = ({ onOpenEnqu
           <div className="lg:col-span-5">
             <div className="relative border border-stone-300 shadow-md bg-stone-200">
               <img
-                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=85"
-                alt="Arbit Infratel Architectural Landmark"
+                src="/arbit-infratel-preview/social/post_6.jpg"
+                alt="Arbit 34 Commercial Landmark"
                 className="w-full h-[400px] sm:h-[480px] object-cover"
               />
-              <div className="bg-[#0B131E] text-white p-4 flex items-center justify-between text-xs font-mono">
-                <span className="flex items-center gap-1.5 text-[#B8965A]">
+              <div className="bg-[#0F172A] text-white p-4 flex items-center justify-between text-xs font-mono">
+                <span className="flex items-center gap-1.5 text-[#2C8FEA] font-bold">
                   <ShieldCheck className="w-4 h-4" />
                   16+ Years Experience
                 </span>
-                <span className="text-stone-300">Gorakhpur, UP</span>
+                <span className="text-slate-300">Gorakhpur, UP</span>
               </div>
             </div>
           </div>

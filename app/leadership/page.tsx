@@ -6,7 +6,7 @@ import { Navbar } from '@/src/components/Navbar';
 import { CorporateEnquiryDrawer } from '@/src/components/CorporateEnquiryDrawer';
 import { Footer } from '@/src/components/Footer';
 import { Toast, type ToastMessage } from '@/src/components/Toast';
-import { ShieldCheck, Scale, Award, ArrowRight, Building, CheckCircle2, FileText, Check } from 'lucide-react';
+import { ShieldCheck, Scale, Award, ArrowRight, Building, CheckCircle2, FileText, Check, Users } from 'lucide-react';
 
 export default function LeadershipPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -28,21 +28,22 @@ export default function LeadershipPage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F6F5F2] text-[#181A1F]">
+    <div className="min-h-screen flex flex-col bg-white text-[#0F172A]">
       <Navbar onOpenEnquiry={handleOpenDrawer} />
 
       <main className="flex-1">
-        {/* Executive Header (Light & Simple) */}
-        <section className="bg-white text-[#0B131E] py-12 sm:py-16 border-b border-stone-200">
-          <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16">
+        {/* Executive Header */}
+        <section className="bg-gradient-to-b from-slate-900 via-[#0F172A] to-slate-900 text-white py-14 sm:py-18 border-b border-slate-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <div className="text-xs font-mono tracking-widest uppercase font-bold text-[#9B7C44] mb-2">
-                ROOTED IN TRUST • BOARD OF DIRECTORS
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#2C8FEA]/20 text-[#2C8FEA] rounded-full text-xs font-semibold tracking-wider uppercase mb-3 border border-[#2C8FEA]/30">
+                <Users className="w-3.5 h-3.5" />
+                <span>Executive Governance &bull; Board of Directors</span>
               </div>
-              <h1 className="text-3xl sm:text-5xl font-serif text-[#0B131E] font-normal tracking-tight">
+              <h1 className="text-3xl sm:text-5xl font-sans font-bold text-white tracking-tight">
                 Executive Leadership
               </h1>
-              <p className="text-sm sm:text-base text-stone-600 mt-3 leading-relaxed max-w-2xl font-normal">
+              <p className="text-sm sm:text-base text-slate-300 mt-3 leading-relaxed max-w-2xl font-normal">
                 Founding directors combining over 16 years of hands-on civil engineering, fiscal discipline, and regulatory integrity across Uttar Pradesh.
               </p>
             </div>

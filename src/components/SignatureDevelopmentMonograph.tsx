@@ -17,24 +17,24 @@ export const SignatureDevelopmentMonograph: React.FC<SignatureDevelopmentMonogra
   const VIEWS = [
     {
       id: 'exterior',
-      label: 'Exterior Facade',
+      label: 'Arbit 34 (Westside)',
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=85',
-      caption: 'North-East Elevation • Double-Glazed High-Reflectance Low-E Curtain Wall',
+      src: '/arbit-infratel-preview/social/post_6.jpg',
+      caption: 'Arbit 34 • Gorakhpur’s Biggest Westside Store • Prime Commercial Facade',
     },
     {
       id: 'atrium',
-      label: 'Double-Height Retail Atrium',
+      label: 'Arbit 36 (Reliance)',
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1519643381401-22c77e60520e?auto=format&fit=crop&w=1600&q=85',
-      caption: '18-Ft Ground Floor Retail Slab • Central Skylight & Escalator Spine',
+      src: '/arbit-infratel-preview/social/post_1.jpg',
+      caption: 'Arbit 36, Gorakhnath • Reliance Fashion Factory • Multi-Level Retail Center',
     },
     {
       id: 'floorplate',
-      label: 'Corporate Floor Plate',
+      label: 'Arbit Vibhuti (Metro)',
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=85',
-      caption: 'Column-Free Executive Plates • VRV Air-Conditioning & High-Speed Elevators',
+      src: '/arbit-infratel-preview/social/post_3.jpg',
+      caption: 'Arbit Vibhuti, Golghar Market • Metro Shoes Flagship Showroom',
     },
     {
       id: 'blueprint',

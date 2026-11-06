@@ -9,27 +9,34 @@ export default {
   theme: {
     extend: {
       colors: {
-        canvas: '#F6F5F2', // Alabaster Warm Stone Canvas
-        obsidian: {
-          DEFAULT: '#0B131E', // Deep Obsidian Slate
-          light: '#142032',
-          deep: '#060B12',
+        canvas: '#FFFFFF', // Clean White Canvas
+        surface: '#F8FAFC', // Crisp Modern Surface
+        arbitBlue: {
+          DEFAULT: '#2C8FEA', // Vibrant Azure Brand Blue from Logo
+          light: '#56ACF8',
+          dark: '#1E75D8',
+          deep: '#155BB5',
+          soft: '#EAF4FE',
+          glow: 'rgba(44, 143, 234, 0.25)',
         },
-        brass: {
-          DEFAULT: '#B8965A', // Muted Champagne Brass
-          light: '#CDB17E',
-          dark: '#9B7C44',
-          muted: 'rgba(184, 150, 90, 0.25)',
-          hairline: 'rgba(184, 150, 90, 0.18)',
+        brandGold: {
+          DEFAULT: '#D0B161', // Logo Arrow Apex Warm Gold Accent
+          light: '#E5C778',
+          dark: '#B59443',
+        },
+        obsidian: {
+          DEFAULT: '#0F172A', // Deep Architectural Slate Navy
+          light: '#1E293B',
+          deep: '#070D18',
         },
         charcoal: {
-          DEFAULT: '#181A1F', // Warm Charcoal Text
-          muted: '#5A6065',
-          subtle: '#8C9298',
+          DEFAULT: '#0F172A', // High-Contrast Modern Text
+          muted: '#475569',
+          subtle: '#64748B',
         },
         stone: {
-          150: '#ECEAE4',
-          250: '#DDD9D0',
+          150: '#F1F5F9',
+          250: '#E2E8F0',
         }
       },
       fontFamily: {

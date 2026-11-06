@@ -8,30 +8,31 @@
   }
 
   body {
-    color: #181A1F;
-    background-color: #F6F5F2;
+    color: #0F172A;
+    background-color: #FFFFFF;
     font-family: var(--font-sans), 'Plus Jakarta Sans', system-ui, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-cormorant), 'Playfair Display', Georgia, serif;
-    color: #0B131E;
-    letter-spacing: -0.01em;
+    font-family: var(--font-sans), 'Plus Jakarta Sans', system-ui, sans-serif;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+    font-weight: 700;
   }
 }
 
-/* Subtle Architectural Guidelines & Layout Grids */
+/* Modern Architectural Grid matching Logo Colors */
 .architectural-grid {
   background-image: 
-    linear-gradient(to right, rgba(184, 150, 90, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(184, 150, 90, 0.08) 1px, transparent 1px);
-  background-size: 48px 48px;
+    linear-gradient(to right, rgba(44, 143, 234, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(44, 143, 234, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
 }
 
 .cad-grid-fine {
   background-image: 
-    linear-gradient(to right, rgba(184, 150, 90, 0.12) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(184, 150, 90, 0.12) 1px, transparent 1px);
+    linear-gradient(to right, rgba(44, 143, 234, 0.10) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(44, 143, 234, 0.10) 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
@@ -45,7 +46,7 @@
   bottom: 0;
   left: 0;
   width: 1px;
-  background-color: rgba(184, 150, 90, 0.25);
+  background-color: rgba(44, 143, 234, 0.25);
   pointer-events: none;
 }
 
@@ -56,15 +57,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0B131E;
+  background: #0F172A;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #B8965A;
+  background: #2C8FEA;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #CDB17E;
+  background: #56ACF8;
 }
 
 /* Editorial Text Scroll Animation */
