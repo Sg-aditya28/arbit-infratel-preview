@@ -108,24 +108,24 @@ export const ArchitecturalHeroSlider: React.FC<ArchitecturalHeroSliderProps> = (
   return (
     <section className="relative min-h-[580px] sm:min-h-[640px] lg:h-[calc(100vh-130px)] max-h-[820px] bg-[#0A1128] text-white flex flex-col justify-center overflow-hidden select-none">
       
-      {/* REAL BUILDING BACKGROUND PHOTO with dynamic smooth crossfade */}
+      {/* REAL BUILDING BACKGROUND PHOTO with dynamic smooth crossfade - Clearly Visible */}
       <div className="absolute inset-0 z-0">
         {HERO_SLIDES.map((s, idx) => (
           <img
             key={s.id}
             src={s.image}
             alt={s.project}
-            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${
-              idx === activeSlide ? 'opacity-20 scale-100' : 'opacity-0 scale-105 pointer-events-none'
+            className={`absolute inset-0 w-full h-full object-cover object-right lg:object-center transition-all duration-1000 ${
+              idx === activeSlide ? 'opacity-70 scale-100' : 'opacity-0 scale-105 pointer-events-none'
             }`}
             loading={idx === 0 ? 'eager' : 'lazy'}
           />
         ))}
 
-        {/* Brand Architectural Gradients matching Logo Azure Blue & Slate Navy */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070D18] via-[#0A1128]/90 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070D18] via-transparent to-black/40"></div>
-        <div className="absolute inset-0 architectural-grid opacity-20 pointer-events-none"></div>
+        {/* Directional scrim: focused on the left for text legibility, transparent on the right so the real building is clearly visible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#070D18] via-[#070D18]/75 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#070D18]/90 via-transparent to-black/30"></div>
+        <div className="absolute inset-0 architectural-grid opacity-10 pointer-events-none"></div>
       </div>
 
       {/* Main Content Area */}
